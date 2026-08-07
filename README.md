@@ -15,12 +15,21 @@
     by bakpakin.  At least for the moment, he is the most likely
     individual to be around to look after things.
 
-  * Docstrings should not contain examples / tutorial-like material;
-    see [this commit](5de889419ff26b710b706958bf99e180d084f564).
-    Size is a consideration.
+  * Docstrings should not contain examples / tutorial-like material:
+  
+    * https://github.com/janet-lang/janet/commit/5de889419ff26b710b706958bf99e180d084f564
+
+  * Related to previous point, size is a consideration:
+    
+    * https://github.com/janet-lang/janet/pull/1789#issuecomment-5160523840
 
   * Aim for correctness of docstrings and express using some
     background knowledge obtainable from the website docs prose.
+    
+    As an example, the terms "bytes type", "indexed type", and
+    "dictionary" are all defined clearly on the data structures
+    page (as well as being referred to in janet.h).
+    
     Docstrings may not be the place to be learning certain kinds of
     basic information about Janet.
 
@@ -28,7 +37,8 @@
     act as background for docstrings.
 
   * Core API page should have examples of intended usage; unintended
-    usages should not be shown.
+    usages should not be shown, though documenting such things in
+    issues may be a good idea.
 
   * Aim for consistency among website docs, docstrings, Core API
     examples.
