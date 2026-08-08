@@ -22,13 +22,13 @@
   # =>
   108
 
-  (get 'hello 3)
+  (get 'hello 1)
   # =>
-  108
+  101
 
-  (get :hello 3)
+  (get :hello 1)
   # =>
-  108
+  101
 
   (get :hello 8)
   # =>
