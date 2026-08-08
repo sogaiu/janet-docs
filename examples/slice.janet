@@ -28,33 +28,45 @@ JANET_CORE_FN(janet_core_slice,
 
 (comment
 
-  (slice "hello")
+  (slice "abcdefg" 0 2)
   # =>
-  "hello"
+  "ab"
 
-  (slice @"bye" 2)
+  (slice @"abcdefg" 0 2)
   # =>
-  "e"
-
-  (slice :unlockable 2 6)
-  # =>
-  "lock"
-
-  (slice 'unlucky -6)
-  # =>
-  "lucky"
+  "ab"
 
   )
 
 (comment
 
-  (slice [:bread :cheese :mustard :bread] 1 -2)
+  (slice @[1 2 3])
   # =>
-  [:cheese :mustard]
+  [1 2 3]
 
-  (slice @["life"] 0)
+  (slice @[:a :b :c] 1)
   # =>
-  ["life"]
+  [:b :c]
+
+  (slice [:a :b :c :d :e] 2 4)
+  # =>
+  [:c :d]
+
+  (slice [:a :b :c :d :e] 2 -1)
+  # =>
+  [:c :d :e]
+
+  (slice [:a :b :c :d :e] 2 -2)
+  # =>
+  [:c :d]
+
+  (slice [:a :b :c :d :e] 2 -4)
+  # =>
+  []
+
+  # errors because end index -10 out of range [-6,5]
+  (protect
+    (slice [:a :b :c :d :e] 2 -10))
 
   )
 
