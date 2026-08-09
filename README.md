@@ -60,9 +60,10 @@
       etc. are we can add examples that reflect intended use.
 
   * Eventually there should be a glossary that lives as part of the
-    website docs (see janet-glossary repository for a rough starting
-    document).  A glossary should help with looking up concepts and
-    related terms as well as a way to browse such things.
+    website docs (see [janet-glossary
+    repository](https://github.com/sogaiu/janet-glossary) for a rough
+    starting document).  A glossary should help with looking up
+    concepts and related terms as well as a way to browse such things.
 
 * Current State
 
