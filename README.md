@@ -68,12 +68,15 @@
 * Current State
 
   * Docstrings need review and refinement; in some cases,
-    clarification about intended behavior will be needed.  It may be
-    a good idea to update the website doc prose to increase
-    consistency with docstrings.
+    clarification about intended behavior will be needed.  It may be a
+    good idea to update the website doc prose to increase consistency
+    with docstrings.
 
   * Core API examples lacking; as docstrings are reviewed and/or
-    refined, examples should be added to / updated.
+    refined, examples should be added to / updated.  If along the way,
+    intent for some usage is clarified, it may be good to ensure there
+    is at least one test in the janet repository to reflect the
+    intent.
 
   * Glossary page does not exist yet; relevant concepts and terms
     need to be identified, recorded, and presented appropriately.
