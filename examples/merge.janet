@@ -23,9 +23,9 @@
   # =>
   @{:x 20 :y 20}
 
-  (merge {:animal :fish} @{:plant :oak} {:fungi :shiitake})
+  (merge {:fish 1} @{:oak 2} {:enoki 3})
   # =>
-  @{:animal :fish :fungi :shiitake :plant :oak}
+  @{:enoki 3 :fish 1 :oak 2}
 
   )
 
