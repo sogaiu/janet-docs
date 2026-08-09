@@ -22,9 +22,9 @@
   # =>
   @{:x 20 :y 20}
 
-  (merge-into @{} @{:plant :oak} {:fungi :shiitake})
+  (merge-into @{} @{:data 2} {:data 3})
   # =>
-  @{:fungi :shiitake :plant :oak}
+  @{:data 3}
 
   )
 
