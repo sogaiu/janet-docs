@@ -1,8 +1,6 @@
 ```
 (defn get-in                                                            
   ``
-  (get-in x ks &opt dflt)
-
   Use the keys `ks` to look up a nested value in `x`. If a value is
   not found, will return `dflt` if provided, or `nil` otherwise.
 
