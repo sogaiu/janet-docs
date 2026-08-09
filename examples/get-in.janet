@@ -7,8 +7,8 @@
   `x` can be a suitable indexed, dictionary, or abstract type with a
   `get` method.
 
-  `ks` can be an indexed, fiber, or abstract type with `get` and
-  `next` methods.
+  `ks` can be an indexed or abstract type with `get` and `next`
+  methods.
   ``
   [x ks &opt dflt]                                                     
   (var d x)                                                            
@@ -30,10 +30,6 @@
   # =>
   :oops
 
-  (get-in {:a {:b 1}} (coro (yield :a) (yield :b)))
-  # =>
-  1
-
   (get-in [[0 1] [2 3]] [1 0])
   # =>
   2
@@ -46,9 +42,19 @@
   # =>
   2
 
+  )
+
+# XXX: leave out because `put-in` doesn't support fibers?
+##     (fibers don't respond to `length`)
+(comment
+
   (get-in [[0 1] [2 3]] (coro (yield 1) (yield 0)))
   # =>
   2
+
+  (get-in {:a {:b 1}} (coro (yield :a) (yield :b)))
+  # =>
+  1
 
   )
 
