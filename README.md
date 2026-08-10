@@ -214,7 +214,7 @@ examples.  It may be good to discuss existing or missing points.
 * Does Janet have contribution policies?
 
   * [CONTRIBUTING.md](https://github.com/janet-lang/janet/blob/master/CONTRIBUTING.md) -
-    note that "Contributions from Automated Tools" and "LLMs, Tool
+    note the "Contributions from Automated Tools" and "LLMs, Tool
     Usage, and Transparency" sections
 
   * [Add LLM, AI and tool usage section to contribution
