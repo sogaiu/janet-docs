@@ -16,13 +16,9 @@
   (each val x
     (def y (f val))
     (cond
-      is-new
-      (do (set is-new false) (set category y) (set span @[val])
-        (array/push ret span))
-      (= y category)
-      (array/push span val)
-      (do (set category y) (set span @[val])
-        (array/push ret span))))
+      is-new (do (set is-new false) (set category y) (set span @[val]) (array/push ret span))
+      (= y category) (array/push span val)
+      (do (set category y) (set span @[val]) (array/push ret span))))
   ret)
 ```
 
