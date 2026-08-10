@@ -118,7 +118,7 @@ good to discuss existing or missing points.
 
   Comments can also be used to indicate that an error is expected,
   some output occurs on standard output, call out some surprising
-  aspect, etc.
+  aspect, clarify some points, etc.
 
 * Don't end an example file with an empty line.
 
