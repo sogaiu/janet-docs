@@ -284,7 +284,7 @@ discussion for some rationale
 
   * [Janet website](https://janet-lang.org/docs/index.html) - official website
 
-  * [Janet for Mere Mortals](https://janet.guide) - @ianthehenry's book
+  * [Janet for Mortals](https://janet.guide) - @ianthehenry's book
 
 * Should I use jpm, janet-pm, or something else?
 
