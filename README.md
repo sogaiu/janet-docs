@@ -150,8 +150,8 @@ reading the points below may help with arriving at a decent
 understanding.  Having said that, the guidelines here are much less
 developed than those for the Core API examples.
 
-To get an idea of some of the background for previous (and ongoing
-work on improving docstrings), please have a look at [some relevant
+To get an idea of some of the background for previous (and ongoing)
+work on improving docstrings, please have a look at [some relevant
 Zulip discussion starting around this
 message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.20Documentation.20Improvements/near/608185555)
 and [this summary of the Janetuary 2025
