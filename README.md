@@ -144,10 +144,11 @@ good to discuss existing or missing points.
 ## Guidelines for Docstrings
 
 The following are the start of some notes on docstring construction.
-As with the guidelines for examples, taking a look at some docstrings
-(e.g. by view the Core API page) while reading the points below may
-help with arriving at a decent understanding.  Having said that, the
-guidelines here are much less developed than the section for examples.
+As with the guidelines for examples, taking a look at some specific
+items (in this case, docstrings, say, on the Core API page) while
+reading the points below may help with arriving at a decent
+understanding.  Having said that, the guidelines here are much less
+developed than those for the Core API examples.
 
 To get an idea of some of the background for previous (and ongoing
 work on improving docstrings), please have a look at [some relevant
