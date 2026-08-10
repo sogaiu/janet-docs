@@ -159,10 +159,10 @@ activity](https://github.com/sogaiu/janet-examples/blob/53c79048fe69bd655151dedf
 which involved community members working on improving the docs.
 
 * Docstrings [should not contain examples / tutorial-like
-  material](https://github.com/janet-lang/janet/commit/5de889419ff26b710b706958bf99e180d084f564)
+  material](https://github.com/janet-lang/janet/commit/5de889419ff26b710b706958bf99e180d084f564).
 
 * Related to previous point, [size is a
-  consideration](https://github.com/janet-lang/janet/pull/1789#issuecomment-5160523840)
+  consideration](https://github.com/janet-lang/janet/pull/1789#issuecomment-5160523840).
 
 * Aim for correctness of docstrings and express using some background
   knowledge obtainable from the website docs prose.
