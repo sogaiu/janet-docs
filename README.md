@@ -206,10 +206,11 @@ which involved community members working on improving the docs.
     types are excluded and only "data structures" are meant.
 
   * iterable - this is a term that does have a solid basis in the
-    source code (via an error message in `janet_next_impl` in
-    `value.c`), but it is not really used on the website docs
-    ("iterate" and "iteration" are though).  An iterable is
-    effectively something that `next` can handle.
+    source code (via [an error message in `janet_next_impl` in
+    `value.c`](https://github.com/janet-lang/janet/blob/4370ae8acc5f1141a241becb8b2a2badc75ac8fe/src/core/value.c#L134)),
+    but it is not really used on the website docs ("iterate" and
+    "iteration" are though).  An iterable is effectively something
+    that `next` can handle.
 
     One issue with this term is that it hasn't turned out to be that
     useful in docstrings.  Specifically, there aren't that many
