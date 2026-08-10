@@ -137,7 +137,9 @@ good to discuss existing or missing points.
     etc.).
 
   * Where and how to record usages where it's unclear from the
-    docstring if it's intended.
+    docstring if it's intended.  Some of that information lives in
+    this repository already, so continuing to add to what's here is
+    one possibility.
 
 ## Guidelines for Docstrings
 
