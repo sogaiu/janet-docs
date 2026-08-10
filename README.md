@@ -279,13 +279,13 @@ README](https://github.com/janet-lang/janet/blob/4370ae8acc5f1141a241becb8b2a2ba
 
   * [Add LLM, AI and tool usage section to contribution
 guide.](https://github.com/janet-lang/janet/pull/1730) - contains some
-discussion as well as point about starting conservative.
+discussion as well as point about starting conservative
 
   * [Poll for Policy on AI contributions to
     Janet](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Poll.20for.20Policy.20on.20AI.20contributions.20to.20Janet/near/577653330) -
     this Zulip discussion contains remarks from various community
     members and might be worth going through to get a general sense of
-    things.
+    things
 
 * Is there a recommended way to install janet and related bits without
   `sudo` (aka per-user / local install)?
