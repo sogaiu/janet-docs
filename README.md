@@ -117,7 +117,8 @@ good to discuss existing or missing points.
 * Use brief comments to explain if needed.
 
   Comments can also be used to indicate that an error is expected,
-  some output occurs on standard output, etc.
+  some output occurs on standard output, call out some surprising
+  aspect, etc.
 
 * Don't end an example file with an empty line.
 
