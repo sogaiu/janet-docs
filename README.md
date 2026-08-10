@@ -256,6 +256,11 @@ which involved community members working on improving the docs.
 
 ## Candidate Unofficial FAQ List
 
+The following is a list of questions and answers (or links to answers)
+that seemed worth collecting in one place.  It's a different sort of
+list than the [one in the repository
+README](https://github.com/janet-lang/janet/blob/4370ae8acc5f1141a241becb8b2a2badc75ac8fe/README.md#faq).
+
 * How can I learn more about the background and goals of the project?
 
   * [Interview with
