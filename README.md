@@ -1,6 +1,13 @@
 # Janet Documentation
 
-## Proposal: Have section on website about Janet's documentation
+Some notes and scratch work on Janet documentation.
+
+## Section on Janet's Website about Documentation?
+
+It may be beneficial to community members to have a section on the
+website that gives hints about how the documentation might be better
+approached, used, and/or maintained.  Perhaps surprisingly, it's not
+necessarily obvious.
 
 * Rationale: To make certain points explicit to aid the following
   aspects of Janet's documentation (website docs and docstrings):
@@ -16,20 +23,20 @@
     individual to be around to look after things.
 
   * Docstrings should not contain examples / tutorial-like material:
-  
+
     * https://github.com/janet-lang/janet/commit/5de889419ff26b710b706958bf99e180d084f564
 
   * Related to previous point, size is a consideration:
-    
+
     * https://github.com/janet-lang/janet/pull/1789#issuecomment-5160523840
 
   * Aim for correctness of docstrings and express using some
     background knowledge obtainable from the website docs prose.
-    
+
     As an example, the terms "bytes type", "indexed type", and
     "dictionary" are all defined clearly on the data structures
     page (as well as being referred to in janet.h).
-    
+
     Docstrings may not be the place to be learning certain kinds of
     basic information about Janet.
 
