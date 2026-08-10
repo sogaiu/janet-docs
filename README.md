@@ -218,8 +218,8 @@ which involved community members working on improving the docs.
     is an exception as it makes pretty good use of it).
 
     Another issue is that there are a number of other C functions in
-    `value.c` which are arguably comparable and yet those do not
-    have analogous terms.  The functions in question include:
+    `value.c` which are arguably comparably relevant and yet those do
+    not have analogous terms.  The functions in question include:
 
     * `janet_equals`
     * `janet_hash`
