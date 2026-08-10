@@ -147,6 +147,11 @@ examples.  It may be good to discuss existing or missing points.
     error) doesn't yet have a uniform convention.  Might be good to
     discuss.
 
+  * Some evaluation results may differ for different users or when
+    done at different times because not everything is a pure function
+    (e.g. time-related things, dictionary key order is unspecified,
+    etc.).
+
   * Where and how to record usages where it's unclear from the
     docstring if it's intended.
 
