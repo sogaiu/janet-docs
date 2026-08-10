@@ -76,6 +76,11 @@ page](https://janet-lang.org/api/index.html) while going through the
 following is likely to help with interpreting the content.  It may be
 good to discuss existing or missing points.
 
+For some background information, see [this summary of the Janetuary
+2025
+activity](https://github.com/sogaiu/janet-examples/blob/53c79048fe69bd655151dedfb5d238c49cc0cb74/doc/janetuary-examples-2025.md)
+which involved community members adding examples.
+
 * Focus on intended usages.
 
   At this point, it seems more useful if what's on the Core API page
@@ -153,10 +158,7 @@ developed than those for the Core API examples.
 To get an idea of some of the background for previous (and ongoing)
 work on improving docstrings, please have a look at [some relevant
 Zulip discussion starting around this
-message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.20Documentation.20Improvements/near/608185555)
-and [this summary of the Janetuary 2025
-activity](https://github.com/sogaiu/janet-examples/blob/53c79048fe69bd655151dedfb5d238c49cc0cb74/doc/janetuary-examples-2025.md)
-which involved community members working on improving the docs.
+message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.20Documentation.20Improvements/near/608185555).
 
 * Docstrings [should not contain examples / tutorial-like
   material](https://github.com/janet-lang/janet/commit/5de889419ff26b710b706958bf99e180d084f564).
