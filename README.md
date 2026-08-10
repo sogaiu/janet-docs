@@ -139,3 +139,52 @@ examples.  It may be good to discuss existing or missing points.
   * Whether to record usages where it's unclear from the docstring if
     it's intended.
 
+## Guidelines for Docstrings
+
+* Try to use terms that have clear definitions on the website
+  (eventually the glossary).  Some examples include:
+
+  * bytes type - string, buffer, symbol, or keyword
+  * indexed type - tuple or array
+  * dictionary - struct or table
+  * fiber
+
+  An exception might be "data structure".  This term seems to have a
+  clear definition, but in practice it doesn't seem to be turning out
+  to be all that useful.  In Janet, it appears to mean bytes, indexed,
+  or dictionary type, but since it seems to leave out fibers and/or
+  abstract types, it hasn't ended up being that useful in docstrings
+  because there seem to be very few situations where both fibers and
+  abstract types are excluded and only "data structures" are meant.
+
+* Some terms that don't appear to have clear definitions include
+  (and we're trying to avoid mostly):
+
+  * collection - according to the data structures page, strings are
+    data structures...but are they collections?  There is no good
+    answer in Janet at the moment and it may not be worth the effort
+    to try to force a definition, i.e. existing clearer terms might
+    turn out to be good enough.  Hopefully, this will become clearer
+    in the near future.
+
+  * <...> data structure - "indexed", "nested", "associative", etc.
+    are unfortunately not consistently used and we're in the midst of
+    removing these uses and favoring instead spelling things out a bit
+    more explicitly (e.g. using "bytes and indexed types") based on
+    the more clearly defined terms.  Note that it's as yet, unclear
+    whether fibers and abstract types count as "data structures".
+
+* Try to be wary of line lengths.  Long line lengths can make doing
+  side-by-side comparisons harder.  It appears to be fairly
+  well-established that people's reading comprehension can be
+  adversely affected when lines are too long.  Peripheral vision,
+  horizontal eye-tracking, and chunking of items per line all suffer
+  as well.
+
+  It might feel more comfortable when writing and there is something
+  to be said for more lines fitting on a single screen (since the
+  entirety of something is more likely to fit, though if things spread
+  out too much sideways, things are not going to be as viewable
+  either), but the prose is going to be read and reviewed far more
+  frequently.  Consider trying to choose shorter words.
+
