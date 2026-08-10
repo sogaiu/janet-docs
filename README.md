@@ -169,7 +169,8 @@ which involved community members working on improving the docs.
 
   As an example, the terms "bytes type", "indexed type", and
   "dictionary" are all defined clearly on the data structures page (as
-  well as being referred to in janet.h).
+  well as [being referred to in
+  `janet.h`](https://github.com/janet-lang/janet/blob/4370ae8acc5f1141a241becb8b2a2badc75ac8fe/src/include/janet.h#L607-L609)).
 
   Docstrings may not be the place to be learning certain kinds of
   basic information about Janet.
