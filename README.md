@@ -301,7 +301,7 @@ discussion for some rationale
   * [Issue #1444](https://github.com/janet-lang/janet/issues/1444) -
     ATM, contrary to the issue's title, it's not looking like `jpm`
     will be re-integrated...however, a subset of functionality was
-    brought into janet and other bits were spun-off into `spork` and
+    brought into `janet` and other bits were spun-off into `spork` and
     evolved as `janet-pm`
 
 * What sort of editor support is there?
