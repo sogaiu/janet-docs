@@ -136,8 +136,8 @@ examples.  It may be good to discuss existing or missing points.
     error) doesn't yet have a uniform convention.  Might be good to
     discuss.
 
-  * Whether to record usages where it's unclear from the docstring if
-    it's intended.
+  * Where and how to record usages where it's unclear from the
+    docstring if it's intended.
 
 ## Guidelines for Docstrings
 
