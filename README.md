@@ -198,7 +198,7 @@ examples.  It may be good to discuss existing or missing points.
 
     One issue with this term is that it hasn't turned out to be that
     useful in docstrings.  Specifically, there aren't that many
-    docstrings where it is that relevant (`empty` makes pretty good
+    docstrings where it is that relevant (`empty?` makes pretty good
     use of it).
 
     Another issue is that there are a number of other C functions in
