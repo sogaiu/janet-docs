@@ -306,7 +306,7 @@ discussion as well as point about starting conservative
   Since for *nix, it's pretty easy to build janet from source, if that
   works for your situation, it may be a simpler path.
 
-* What are some resources for learning janet?
+* What are some resources for learning to use Janet?
 
   * [Janet website](https://janet-lang.org/docs/index.html) - official website
 
