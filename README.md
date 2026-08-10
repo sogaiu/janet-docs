@@ -124,7 +124,7 @@ examples.  It may be good to discuss existing or missing points.
   Core API on a suitable device.
 
 * Use `# ->` followed by return values to show evaluation results.
-  
+
   Though it's not always possible, it is nicer if the return value is
   copy-pastable into a repl.  Square brackets can be used toward this
   end to show tuple values.  Single quotes in appropriate locations
