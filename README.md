@@ -27,6 +27,9 @@ necessarily obvious.
   * Aim for consistency among website docs, docstrings, and Core API
     examples.
 
+  * All aforementioned components need to remain maintainable by
+    bakpakin.
+
 * Eventual Recommended Use of Janet Documentation
 
   * Read website docs and type in and experiment with examples both
