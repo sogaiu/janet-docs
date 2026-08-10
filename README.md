@@ -245,12 +245,12 @@ which involved community members working on improving the docs.
   It appears to be fairly well-established that people's reading
   comprehension can be adversely affected when lines are too long.
   Peripheral vision, horizontal eye-tracking, and chunking of items
-  per line all suffer as well.
+  per line all challenged as well.
 
   It might feel more comfortable when writing and there is something
   to be said for more lines fitting on a single screen (since the
-  entirety of something is more likely to fit, though if things spread
-  out too much sideways, things are not going to be as viewable
+  entirety of something is more likely to fit...though if things
+  spread out too much sideways, things are not going to be as viewable
   either), but the prose is going to be read and reviewed far more
   frequently.  Consider trying to choose shorter words.
 
