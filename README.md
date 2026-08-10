@@ -158,10 +158,6 @@ and [this summary of the Janetuary 2025
 activity](https://github.com/sogaiu/janet-examples/blob/53c79048fe69bd655151dedfb5d238c49cc0cb74/doc/janetuary-examples-2025.md)
 which involved community members working on improving the docs.
 
-* Docstrings and website content should be considered maintainable by
-  bakpakin.  At least for the moment, he is the most likely individual
-  to be around to look after things.
-
 * Docstrings [should not contain examples / tutorial-like
   material](https://github.com/janet-lang/janet/commit/5de889419ff26b710b706958bf99e180d084f564)
 
