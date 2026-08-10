@@ -214,8 +214,8 @@ which involved community members working on improving the docs.
 
     One issue with this term is that it hasn't turned out to be that
     useful in docstrings.  Specifically, there aren't that many
-    docstrings where it is that relevant (`empty?` makes pretty good
-    use of it).
+    docstrings where it is that relevant (though `empty?`'s docstring
+    is an exception as it makes pretty good use of it).
 
     Another issue is that there are a number of other C functions in
     `value.c` which are arguably comparable and yet those do not
