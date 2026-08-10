@@ -16,38 +16,15 @@ necessarily obvious.
   * Usage
   * Maintenance (communication, actions, decision-making, etc.)
 
-* Constraints and Goals
-
-  * Docstrings and website content should be considered maintainable
-    by bakpakin.  At least for the moment, he is the most likely
-    individual to be around to look after things.
-
-  * Docstrings should not contain examples / tutorial-like material:
-
-    * https://github.com/janet-lang/janet/commit/5de889419ff26b710b706958bf99e180d084f564
-
-  * Related to previous point, size is a consideration:
-
-    * https://github.com/janet-lang/janet/pull/1789#issuecomment-5160523840
-
-  * Aim for correctness of docstrings and express using some
-    background knowledge obtainable from the website docs prose.
-
-    As an example, the terms "bytes type", "indexed type", and
-    "dictionary" are all defined clearly on the data structures
-    page (as well as being referred to in janet.h).
-
-    Docstrings may not be the place to be learning certain kinds of
-    basic information about Janet.
+* Goals
 
   * Website should be improved to contain sufficient information to
     act as background for docstrings.
 
-  * Core API page should have examples of intended usage; unintended
-    usages should not be shown, though documenting such things in
-    issues may be a good idea.
+  * Core API page should have examples of intended usage to be viewed
+    along with docstrings.
 
-  * Aim for consistency among website docs, docstrings, Core API
+  * Aim for consistency among website docs, docstrings, and Core API
     examples.
 
 * Eventual Recommended Use of Janet Documentation
@@ -91,7 +68,10 @@ necessarily obvious.
 ## Guidelines for Core API Examples
 
 The following are evolving guidelines for the construction of Core API
-examples.  It may be good to discuss existing or missing points.
+examples.  Taking a look at the [Core API
+page](https://janet-lang.org/api/index.html) while going through the
+following is likely to help with interpreting the content.  It may be
+good to discuss existing or missing points.
 
 * Focus on intended usages.
 
@@ -157,7 +137,41 @@ examples.  It may be good to discuss existing or missing points.
 
 ## Guidelines for Docstrings
 
-* Try to use terms that have clear definitions on the website
+The following are the start of some notes on docstring construction.
+As with the guidelines for examples, taking a look at some docstrings
+(e.g. by view the Core API page) while reading the points below may
+help with arriving at a decent understanding.  Having said that, the
+guidelines here are much less developed than the section for examples.
+
+To get an idea of some of the background for previous (and ongoing
+work on improving docstrings), please have a look at [some relevant
+Zulip discussion starting around this
+message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.20Documentation.20Improvements/near/608185555)
+and [this summary of the Janetuary 2025
+activity](https://github.com/sogaiu/janet-examples/blob/53c79048fe69bd655151dedfb5d238c49cc0cb74/doc/janetuary-examples-2025.md)
+which involved community members working on improving the docs.
+
+* Docstrings and website content should be considered maintainable by
+  bakpakin.  At least for the moment, he is the most likely individual
+  to be around to look after things.
+
+* Docstrings [should not contain examples / tutorial-like
+  material](https://github.com/janet-lang/janet/commit/5de889419ff26b710b706958bf99e180d084f564)
+
+* Related to previous point, [size is a
+  consideration](https://github.com/janet-lang/janet/pull/1789#issuecomment-5160523840)
+
+* Aim for correctness of docstrings and express using some background
+  knowledge obtainable from the website docs prose.
+
+  As an example, the terms "bytes type", "indexed type", and
+  "dictionary" are all defined clearly on the data structures page (as
+  well as being referred to in janet.h).
+
+  Docstrings may not be the place to be learning certain kinds of
+  basic information about Janet.
+
+  Try to use terms that have clear definitions on the website
   (eventually the glossary).  Some examples include:
 
   * bytes type - string, buffer, symbol, or keyword
@@ -165,16 +179,10 @@ examples.  It may be good to discuss existing or missing points.
   * dictionary - struct or table
   * fiber
 
-  An exception might be "data structure".  This term seems to have a
-  clear definition, but in practice it doesn't seem to be turning out
-  to be all that useful.  In Janet, it appears to mean bytes, indexed,
-  or dictionary type, but since it seems to leave out fibers and/or
-  abstract types, it hasn't ended up being that useful in docstrings
-  because there seem to be very few situations where both fibers and
-  abstract types are excluded and only "data structures" are meant.
+  An exception might be "data structure".  See below for more details.
 
-* Some terms that don't appear to have clear definitions include
-  (and we're trying to avoid mostly):
+* There are some terms which might be better to avoid, at least at
+  first, e.g.:
 
   * collection - according to the data structures page, strings are
     data structures...but are they collections?  There is no good
@@ -188,7 +196,10 @@ examples.  It may be good to discuss existing or missing points.
     removing these uses and favoring instead spelling things out a bit
     more explicitly (e.g. using "bytes and indexed types") based on
     the more clearly defined terms.  Note that it's as yet, unclear
-    whether fibers and abstract types count as "data structures".
+    whether fibers and abstract types count as "data structures".  The
+    term hasn't ended up being that useful in docstrings because there
+    seem to be very few situations where both fibers and abstract
+    types are excluded and only "data structures" are meant.
 
   * iterable - this is a term that does have a solid basis in the
     source code (via an error message in `janet_next_impl` in
