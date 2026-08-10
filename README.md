@@ -185,6 +185,39 @@ examples.  It may be good to discuss existing or missing points.
     the more clearly defined terms.  Note that it's as yet, unclear
     whether fibers and abstract types count as "data structures".
 
+  * iterable - this is a term that does have a solid basis in the
+    source code (via an error message in `janet_next_impl` in
+    `value.c`), but it is not really used on the website docs
+    ("iterate" and "iteration" are though).  An iterable is
+    effectively something that `next` can handle.
+
+    One issue with this term is that it hasn't turned out to be that
+    useful in docstrings.  Specifically, there aren't that many
+    docstrings where it is that relevant (`empty` makes pretty good
+    use of it).
+
+    Another issue is that there are a number of other C functions in
+    `value.c` which are arguably comparable and yet those do not
+    have analogous terms.  The functions in question include:
+
+    * `janet_equals`
+    * `janet_hash`
+    * `janet_compare`
+    * `janet_in`
+    * `janet_get`
+    * `janet_getindex`
+    * `janet_length` (and may be `janet_lengthv`)
+    * `janet_putindex`
+    * `janet_put`
+
+    None of these have a term like "iterable" associated with them.
+
+    ATM, it seems that we might as well say something like "responds
+    to `next`" or "has `get` support", particularly because there are
+    a number of cases where we want to say that an abstract type that
+    has implementations of more than one of associated methods
+    (e.g. `get` and `next`) is relevant.
+
 * Try to be wary of line lengths.  Long line lengths can make doing
   side-by-side comparisons harder.  It appears to be fairly
   well-established that people's reading comprehension can be
