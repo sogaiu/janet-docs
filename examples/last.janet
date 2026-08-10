@@ -3,12 +3,8 @@
   ``
   Get the last element from `x`.
 
-  If `x` is a non-empty bytes or indexed type value, return the last
-  element.
-
-  If `x` is an abstract type value with suitable `get` and `length`
-  methods, call the `get` method with one less than the result of
-  calling the `length` method.
+  `x` can be a bytes, indexed, or abstract type value with suitable
+  `get` and `length` methods.
   ``
   [x]
   (get x (- (length x) 1)))
