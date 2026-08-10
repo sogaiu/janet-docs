@@ -301,8 +301,10 @@ discussion as well as point about starting conservative
   having `/usr/local/lib/janet` hard-wired in, ignore `PREFIX` and
   thus may require work to get working with certain setups.  See [this
   issue](https://github.com/janet-lang/jpm/issues/96) for some details
-  and pointers.  It's pretty easy to build janet from source and if
-  that works for your situation, it may be a simpler path.
+  and pointers.
+  
+  Since for *nix, it's pretty easy to build janet from source, if that
+  works for your situation, it may be a simpler path.
 
 * What are some resources for learning janet?
 
