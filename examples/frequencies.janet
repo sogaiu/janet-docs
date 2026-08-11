@@ -3,8 +3,8 @@
   ``
   Returns a table of occurrences of each value in `x`.
 
-  `x` can be a value of type bytes, indexed, dictionary, fiber, or
-  abstract with `get` and `next` methods.
+  `x` can be a bytes, indexed, dictionary, fiber, or abstract type
+  with `get` and `next` methods.
   ``
   [x]
   (def freqs @{})
