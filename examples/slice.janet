@@ -8,9 +8,8 @@ JANET_CORE_FN(janet_core_slice,
               "\n"
               "If `x` is an indexed type, returns a tuple.\n"
               "\n"
-              "Optional arguments `start` and `end` can be "
-              "integers to specify sub-range indices. If neither "
-              "is supplied, uses the full range.") {
+              "Combinations of optional arguments `start` and "
+              "`end` can be given to specify the sub-range.") {
     JanetRange range;
     JanetByteView bview;
     JanetView iview;
