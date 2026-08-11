@@ -11,14 +11,14 @@
   [f x]
   (def ret @[])
   (var span nil)
-  (var category nil)
-  (var is-new true)
-  (each val x
-    (def y (f val))
+  (var categ nil)
+  (var new? true)
+  (each v x
+    (def y (f v))
     (cond
-      is-new (do (set is-new false) (set category y) (set span @[val]) (array/push ret span))
-      (= y category) (array/push span val)
-      (do (set category y) (set span @[val]) (array/push ret span))))
+      new? (do (set new? false) (set categ y) (set span @[v]) (array/push ret span))
+      (= categ y) (array/push span v)
+      (do (set categ y) (set span @[v]) (array/push ret span))))
   ret)
 ```
 
