@@ -244,10 +244,10 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
 * Try to be wary of line lengths.
 
   Long line lengths can make doing side-by-side comparisons harder.
-  It appears to be fairly well-established that people's reading
-  comprehension can be adversely affected when lines are too long.
-  Peripheral vision, horizontal eye-tracking, and chunking of items
-  per line all challenged as well.
+  It appears to be fairly well-established that reading comprehension
+  can be adversely affected when lines are too long.  Peripheral
+  vision, horizontal eye-tracking, and chunking of items per line are
+  challenged as well.
 
   It might feel more comfortable when writing and there is something
   to be said for more lines fitting on a single screen (since the
