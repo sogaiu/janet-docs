@@ -33,11 +33,12 @@ necessarily obvious.
 * Eventual Recommended Use of Janet Documentation
 
   * Read website docs and type in and experiment with examples both
-    from main text as well as content from Core API page.
+    from site prose as well as content from Core API page
+    
     Understanding gained in this or similar manner can help with
     making better use of docstrings and Janet's source code.
 
-  * Visit and use the Core API page.
+  * Visit and use the Core API page
 
     * Single page searching across docstrings and examples is
       possible.
@@ -46,27 +47,40 @@ necessarily obvious.
       intent for the behaviors of the existing functions, macros,
       etc. are we can add examples that reflect intended use.
 
-  * Eventually there should be a glossary that lives as part of the
-    website docs (see [janet-glossary
+  * There should be a glossary that lives as part of the website docs
+  
+    A glossary should help with looking up concepts and related terms
+    as well as a way to browse such things.
+    
+    See [janet-glossary
     repository](https://github.com/sogaiu/janet-glossary) for a rough
-    starting document).  A glossary should help with looking up
-    concepts and related terms as well as a way to browse such things.
+    starting document.
 
 * Current State
 
-  * Docstrings need review and refinement; in some cases,
-    clarification about intended behavior will be needed.  It may be a
-    good idea to update the website doc prose to increase consistency
-    with docstrings.
+  * Docstrings need review and refinement
+  
+    In some cases, clarification about intended behavior will be
+    needed.  It may be a good idea to update the website doc prose to
+    increase consistency with docstrings.
 
-  * Core API examples lacking; as docstrings are reviewed and/or
-    refined, examples should be added to / updated.  If along the way,
-    intent for some usage is clarified, it may be good to ensure there
-    is at least one test in the janet repository to reflect the
-    intent.
+  * Core API examples lacking
+  
+    As docstrings are reviewed and/or refined, examples should be
+    added to / updated.  If along the way, intent for some usage is
+    clarified, it may be good to ensure there is at least one test in
+    the janet repository to reflect the intent.
 
-  * Glossary page does not exist yet; relevant concepts and terms
-    need to be identified, recorded, and presented appropriately.
+  * Some website content may be missing or underdeveloped
+  
+    The following topics may not yet be covered enough or at all:
+    
+    * functions in value.c that implement `next`, `get`, etc.
+    * abstract types
+    * inttypes
+    * janet-pm
+    * glossary - relevant concepts and terms need to be identified,
+      recorded, and presented appropriately
 
 ## Guidelines for Core API Examples
 
@@ -81,7 +95,7 @@ For some background information, see [this summary of the Janetuary
 activity](https://github.com/sogaiu/janet-examples/blob/53c79048fe69bd655151dedfb5d238c49cc0cb74/doc/janetuary-examples-2025.md)
 which involved community members adding examples.
 
-* Focus on intended usages.
+* Focus on intended usages
 
   At this point, it seems more useful if what's on the Core API page
   can be a strong hint that some type of usage is intended.  A
@@ -91,18 +105,18 @@ which involved community members adding examples.
   an issue is probably a better way to track such cases for discussion
   and revisiting later.
 
-* Try to exhibit unexpected / surprising (but intended) edge cases.
+* Try to exhibit unexpected / surprising (but intended) edge cases
 
   This may help document "gotchas".  Check the docstring, look at the
   implementation, and/or ask for clarification regarding intention.
 
-* Try to make short and illustrative examples.
+* Try to make short and illustrative examples
 
   It's not always practical to do this, but it may be worth trying
   initially.  Note that as fun as it can be, we're not code golfing
   here.
 
-* Try to be wary of line lengths.
+* Try to be wary of line lengths
 
   Due to reasons (TM), longer lines don't render so well on narrower
   screens such as those on phones and [the current rendering may not
@@ -111,7 +125,7 @@ which involved community members adding examples.
   sense of what works and what doesn't can be gotten by browsing the
   Core API on a suitable device.
 
-* Use `# ->` followed by return values to show evaluation results.
+* Use `# ->` followed by return values to show evaluation results
 
   Though it's not always possible, it is nicer if the return value is
   copy-pastable into a repl.  Square brackets can be used toward this
@@ -119,18 +133,18 @@ which involved community members adding examples.
   can also help sometimes.  View the existing examples on the Core API
   to get a sense of what to do.
 
-* Use brief comments to explain if needed.
+* Use brief comments to explain if needed
 
   Comments can also be used to indicate that an error is expected,
   some output occurs on standard output, call out some surprising
   aspect, clarify some points, etc.
 
-* Don't end an example file with an empty line.
+* Don't end an example file with an empty line
 
   Currently, this will lead to rendering of a blank line that looks
   out of place.
 
-* Less clear points:
+* Less clear points...
 
   * Indicating errors and output (e.g. to standard output or standard
     error) doesn't yet have a uniform convention.  Might be good to
@@ -164,14 +178,17 @@ work on improving docstrings, please have a look at [some relevant
 Zulip discussion starting around this
 message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.20Documentation.20Improvements/near/608185555).
 
-* Docstrings [should not contain examples / tutorial-like
-  material](https://github.com/janet-lang/janet/commit/5de889419ff26b710b706958bf99e180d084f564).
+* Docstrings should not contain examples / tutorial-like material
+  
+  See the commit message [here](https://github.com/janet-lang/janet/commit/5de889419ff26b710b706958bf99e180d084f564).
 
-* Related to previous point, [size is a
-  consideration](https://github.com/janet-lang/janet/pull/1789#issuecomment-5160523840).
+* Size is a consideration
+
+  Related to the previous point, please see [this PR
+  comment](https://github.com/janet-lang/janet/pull/1789#issuecomment-5160523840).
 
 * Aim for correctness of docstrings and express using some background
-  knowledge obtainable from the website docs prose.
+  knowledge obtainable from the website docs prose
 
   As an example, the terms "bytes type", "indexed type", and
   "dictionary" are all defined clearly on the data structures page (as
@@ -191,8 +208,10 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
 
   An exception might be "data structure".  See below for more details.
 
-* There are some terms which might be better to avoid, at least at
-  first, e.g.:
+* There are some terms which might be better to avoid (at least at
+  first)
+
+  Below are some terms under consideration:
 
   * collection - according to the data structures page, strings are
     data structures...but are they collections?  There is no good
@@ -245,7 +264,7 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
     has implementations of more than one of associated methods
     (e.g. `get` and `next`) is relevant.
 
-* Try to be wary of line lengths.
+* Try to be wary of line lengths
 
   Long line lengths can make doing side-by-side comparisons harder.
   It appears to be fairly well-established that reading comprehension
