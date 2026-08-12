@@ -1,12 +1,11 @@
 ```
 (defn flatten
   ``
-  Returns a depth first traversal of `x` as a new array.
-
-  `x` can be an indexed type or fiber.
+  Returns a depth first traversal of an indexed type `ind` as a new
+  array.
   ``
-  [x]
-  (flatten-into @[] x))
+  [ind]
+  (flatten-into @[] ind))
 ```
 
 (comment
@@ -21,6 +20,7 @@
 
   )
 
+# XXX: questionable whether should mention
 (comment
 
   (flatten (coro (yield [:k [:l]]) (yield [[:m :n] [:o]])))
