@@ -32,15 +32,6 @@ which involved community members adding examples.
   initially.  Note that as fun as it can be, we're not code golfing
   here.
 
-* Try to be wary of line lengths
-
-  Due to reasons (TM), longer lines don't render so well on narrower
-  screens such as those on phones and [the current rendering may not
-  be so easy to
-  change](https://github.com/janet-lang/janet-lang.org/issues/340).  A
-  sense of what works and what doesn't can be gotten by browsing the
-  Core API on a suitable device.
-
 * Use `# ->` followed by return values to show evaluation results
 
   Though it's not always possible, it is nicer if the return value is
@@ -54,6 +45,15 @@ which involved community members adding examples.
   Comments can also be used to indicate that an error is expected,
   some output occurs on standard output, call out some surprising
   aspect, clarify some points, etc.
+
+* Try to be wary of line lengths
+
+  Due to reasons (TM), longer lines don't render so well on narrower
+  screens such as those on phones and [the current rendering may not
+  be so easy to
+  change](https://github.com/janet-lang/janet-lang.org/issues/340).  A
+  sense of what works and what doesn't can be gotten by browsing the
+  Core API on a suitable device.
 
 * Don't end an example file with an empty line
 
