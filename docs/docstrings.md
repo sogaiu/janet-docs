@@ -113,3 +113,9 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
   spread out too much sideways, things are not going to be as viewable
   either), but the prose is going to be read and reviewed far more
   frequently.  Consider trying to choose shorter words.
+
+* Use one space after a grammatical period (full stop)
+
+  Most of the existing docstrings do not use more than one space
+  character after a period character.
+
