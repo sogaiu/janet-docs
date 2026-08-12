@@ -71,7 +71,7 @@ necessarily obvious.
 
     The following topics may not yet be covered enough or at all:
 
-    * functions in value.c that implement `next`, `get`, etc.
+    * functions in `value.c` that implement `next`, `get`, etc.
     * abstract types - see [this collection of
       links](https://github.com/sogaiu/janet-abstract-type-notes) for
       some existing info
