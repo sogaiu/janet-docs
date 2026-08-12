@@ -60,12 +60,18 @@ necessarily obvious.
     needed.  It may be a good idea to update the website doc prose to
     increase consistency with docstrings.
 
+    See the files in [this directory](../examples) for some work in
+    this direction.
+
   * Core API examples lacking
 
     As docstrings are reviewed and/or refined, examples should be
     added to / updated if needed.  If along the way, intent for some
     usage is clarified, it may also be good to ensure there are some
     correspomding tests in the janet repository.
+
+    See the files in [this directory](../examples) for some work in
+    this direction.
 
   * Some website content may be missing or underdeveloped
 
