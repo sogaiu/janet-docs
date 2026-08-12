@@ -99,6 +99,36 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
     has implementations of more than one of associated methods
     (e.g. `get` and `next`) is relevant.
 
+* Only use certain supported features of Janet docstrings
+
+  At minimum, probably it makes sense to:
+
+  1. First read the [brief official summary of supported
+     features](https://janet-lang.org/docs/documentation.html#Formatting-with-Markdown).
+     It's a bit light on the details, but is a good short starting
+     point.
+
+  2. Next browse [this repository summarizing some existing usage of
+     Janet docstring
+     features](https://github.com/sogaiu/janet-docstring-notes).  It
+     contains [this
+     section](https://github.com/sogaiu/janet-docstring-notes/blob/30eda4a97e0d9b49e56e4b7696849ab5fa298421/README.md#in-janet-itself)
+     which summarizes which features are used in the docstrings found
+     in the janet repository itself.  Not all features are used and it
+     probably makes sense to stick with the subset in use.
+
+  If curious about past discussions, have a look at [this
+  issue](https://github.com/janet-lang/janet-lang.org/issues/335).
+  It's quite long and detailed though with no real conclusion.
+
+  There is a [prototype tool to check
+  docstrings](https://github.com/sogaiu/jdcheck) for compliance:
+
+  > It detects various features and reports if it finds features that
+  > are known not to be supported by `doc-format`.
+
+  There haven't been any 3rd party use reports so YMMV.
+
 * Try to be wary of line lengths
 
   Long line lengths can make doing side-by-side comparisons harder.
