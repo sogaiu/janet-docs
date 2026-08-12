@@ -3,8 +3,8 @@
   ``
   Get the keys of `x` as an array.
 
-  `x` can be a bytes, indexed, dictionary, fiber, or abstract type
-  with a suitable `next` method.
+  `x` can be a bytes, indexed, dictionary, or abstract type with a
+  suitable `next` method.
   ``
   [x]
   (if (lengthable? x)
@@ -42,6 +42,7 @@
 
   )
 
+# XXX: is it worth mentioning fibers can be used...
 (comment
 
   # a fiber's keys are always 0
