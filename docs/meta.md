@@ -36,12 +36,13 @@ necessarily obvious.
 
   2. Visit and use the Core API page
 
-     * Single page searching across docstrings and examples is
-       possible.
+     The Core API page lists all docstrings for `janet`'s constructs
+     along with a growing set of usage examples.  It is a single page
+     so searching across docstrings and examples is made easier.
 
-     * Examples are still sparse, but as we learn better what the
-       intent for the behaviors of the existing functions, macros,
-       etc. are we can add examples that reflect intended use.
+     Examples are still sparse, but as we learn better what the intent
+     for the behaviors of the existing functions, macros, etc. are we
+     can add examples that reflect intended use.
 
   3. There should be a glossary that lives as part of the website docs
 
