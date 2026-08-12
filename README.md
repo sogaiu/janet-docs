@@ -67,9 +67,9 @@ necessarily obvious.
   * Core API examples lacking
   
     As docstrings are reviewed and/or refined, examples should be
-    added to / updated.  If along the way, intent for some usage is
-    clarified, it may be good to ensure there is at least one test in
-    the janet repository to reflect the intent.
+    added to / updated if needed.  If along the way, intent for some
+    usage is clarified, it may also be good to ensure there are some
+    correspomding tests in the janet repository.
 
   * Some website content may be missing or underdeveloped
   
