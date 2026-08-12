@@ -4,7 +4,7 @@
   Check if `x` is empty.
 
   `x` can be a bytes, indexed, dictionary, fiber, or abstract type
-  with a `next` method.
+  with a suitable `next` method.
   ``
   [x]
   (= nil (next x nil)))
