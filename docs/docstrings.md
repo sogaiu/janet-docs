@@ -13,14 +13,11 @@ work on improving docstrings, please have a look at [some relevant
 Zulip discussion starting around this
 message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.20Documentation.20Improvements/near/608185555).
 
+## Content
+
 * Docstrings should not contain examples / tutorial-like material
 
   See the commit message [here](https://github.com/janet-lang/janet/commit/5de889419ff26b710b706958bf99e180d084f564).
-
-* Size is a consideration
-
-  Related to the previous point, please see [this PR
-  comment](https://github.com/janet-lang/janet/pull/1789#issuecomment-5160523840).
 
 * Aim for correctness of docstrings and express using some background
   knowledge obtainable from the website docs prose
@@ -99,6 +96,14 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
     has implementations of more than one of associated methods
     (e.g. `get` and `next`) is relevant.
 
+## Size, Features, and Format
+
+* Size is a consideration
+
+  Related to the point about not having tutorials or examples, please
+  see [this PR
+  comment](https://github.com/janet-lang/janet/pull/1789#issuecomment-5160523840).
+
 * Only use certain supported features of Janet docstrings
 
   At minimum, probably it makes sense to:
@@ -129,6 +134,11 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
 
   There haven't been any 3rd party use reports so YMMV.
 
+* Use one space after a grammatical period (full stop)
+
+  Most of the existing docstrings do not use more than one space
+  character after a period character.
+
 * Try to be wary of line lengths
 
   Long line lengths can make doing side-by-side comparisons harder.
@@ -143,9 +153,4 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
   spread out too much sideways, things are not going to be as viewable
   either), but the prose is going to be read and reviewed far more
   frequently.  Consider trying to choose shorter words.
-
-* Use one space after a grammatical period (full stop)
-
-  Most of the existing docstrings do not use more than one space
-  character after a period character.
 
