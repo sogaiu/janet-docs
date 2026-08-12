@@ -5,8 +5,8 @@
   are the keys. If multiple keys in `x` are mapped to the same value,
   only one of those values will become a key in the returned table.
 
-  `x` can be a bytes, indexed, dictionary, fiber, or abstract type
-  with a `next` method.
+  `x` can be a bytes, indexed, dictionary, or abstract type with a
+  `next` method.
   ``
   [x]
   (def ret @{})
@@ -51,6 +51,7 @@
 
   )
 
+# XXX: is it worth mentioning fibers can be used...
 (comment
 
   (invert (coro (yield :j) (yield :k)))
