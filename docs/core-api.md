@@ -11,6 +11,8 @@ For some background information, see [this summary of the Janetuary
 activity](https://github.com/sogaiu/janet-examples/blob/53c79048fe69bd655151dedfb5d238c49cc0cb74/doc/janetuary-examples-2025.md)
 which involved community members adding examples.
 
+## Content
+
 * Focus on intended usages
 
   At this point, it seems more useful if what's on the Core API page
@@ -32,6 +34,14 @@ which involved community members adding examples.
   initially.  Note that as fun as it can be, we're not code golfing
   here.
 
+* Use brief comments to explain if needed
+
+  Comments can also be used to indicate that an error is expected,
+  some output occurs on standard output, call out some surprising
+  aspect, clarify some points, etc.
+
+## Format
+
 * Use `# ->` followed by return values to show evaluation results
 
   Though it's not always possible, it is nicer if the return value is
@@ -39,12 +49,6 @@ which involved community members adding examples.
   end to show tuple values.  Single quotes in appropriate locations
   can also help sometimes.  View the existing examples on the Core API
   to get a sense of what to do.
-
-* Use brief comments to explain if needed
-
-  Comments can also be used to indicate that an error is expected,
-  some output occurs on standard output, call out some surprising
-  aspect, clarify some points, etc.
 
 * Try to be wary of line lengths
 
@@ -60,22 +64,25 @@ which involved community members adding examples.
   Currently, this will lead to rendering of a blank line that looks
   out of place.
 
-* Less clear points...
+## Misc
 
-  * Indicating errors and output (e.g. to standard output or standard
-    error) doesn't yet have a uniform convention.  Might be good to
-    discuss.
+These points are recorded here for reference.  They are mostly
+reminders.
 
-  * Some evaluation results may differ for different users or when
-    done at different times because some aspects of things are
-    not "pure":
+* Indicating errors and output (e.g. to standard output or standard
+  error) doesn't yet have a uniform convention.  Might be good to
+  discuss.
 
-    * dictionary key-value order
-    * randomness
-    * I/O (including network)
-    * time
+* Some evaluation results may differ for different users or when
+  done at different times because some aspects of things are
+  not "pure":
 
-  * Where and how to record usages where it's unclear from the
-    docstring if it's intended.  Some of that information lives in
-    this repository already, so continuing to add to what's here is
-    one possibility.
+  * dictionary key-value order
+  * randomness
+  * I/O (including network)
+  * time
+
+* Where and how to record usages where it's unclear from the
+  docstring if it's intended.  Some of that information lives in
+  this repository already, so continuing to add to what's here is
+  one possibility.
