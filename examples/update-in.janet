@@ -41,9 +41,17 @@
   # =>
   @[[0 1] @[8]]
 
+  )
+
+(comment
+
   (update-in @{:a @{:b 2}} [:a :b] inc)
   # =>
   @{:a @{:b 3}}
+
+  (update-in @{} [:x :y] |(do $1) :z)
+  # =>
+  @{:x @{:y :z}}
 
   (update-in @{:a @{}} [:a :b] |(if $ :yeah :nope))
   # =>
