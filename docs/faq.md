@@ -1,4 +1,4 @@
-# Candidate Unofficial FAQ List
+# Unofficial FAQ List
 
 The following is a list of questions and answers (or links to answers)
 that seemed worth collecting in one place.  It's a different sort of
