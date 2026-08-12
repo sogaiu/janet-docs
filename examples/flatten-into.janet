@@ -1,13 +1,11 @@
 ```
 (defn flatten-into
   ``
-  Appends the depth first traversal of `x` into a given array `into`.
-  Returns `into`.
-
-  `x` can be an indexed type or fiber.
+  Appends the depth first traversal of an indexed type `ind` into a
+  given array `into`.  Returns `into`.
   ``
-  [into x]
-  (each elt x
+  [into ind]
+  (each elt ind
     (if (indexed? elt)
       (flatten-into into elt)
       (array/push into elt)))
@@ -26,6 +24,7 @@
 
   )
 
+# XXX: questionable whether should mention
 (comment
 
   (flatten-into @[:j] (coro (yield [:k [:l]]) (yield [[:m :n] [:o]])))
