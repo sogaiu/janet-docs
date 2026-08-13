@@ -1,7 +1,7 @@
 ```
 (defn pairs
   ``
-  Return an array of tuples of the key-value pairs of `x`.  For bytes
+  Return an array of tuples of the key-value pairs of `x`. For bytes
   and indexed types, the integer indices are considered the keys.
 
   `x` can be a bytes, indexed, dictionary, or abstract type with
