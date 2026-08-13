@@ -10,7 +10,7 @@
   ``
   [x &opt before?]
   (default before? <)
-  (sort-help ind 0 (- (length x) 1) before?))
+  (sort-help x 0 (- (length x) 1) before?))
 ```
 
 (comment
