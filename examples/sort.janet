@@ -2,7 +2,7 @@
 (defn sort
   ``
   Sorts `x` in-place, and returns it. Uses quick-sort and is not a
-  stable sort.  If a `before?` comparator function is provided, sorts
+  stable sort. If a `before?` comparator function is provided, sorts
   elements using that, otherwise uses `<`.
 
   `x` can be a buffer, array, or abstract type with suitable `get`,
