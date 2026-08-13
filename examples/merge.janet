@@ -3,7 +3,7 @@
   ``
   Merges multiple dictionaries into one new table. If a key appears in
   more than one dictionary in `dicts` then later values replace any
-  previous ones.  Returns the new table.
+  previous ones. Returns the new table.
   ``
   [& dicts]
   (def container @{})
