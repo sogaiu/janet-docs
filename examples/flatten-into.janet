@@ -2,7 +2,7 @@
 (defn flatten-into
   ``
   Appends the depth first traversal of an indexed type `ind` into a
-  given array `into`.  Returns `into`.
+  given array `into`. Returns `into`.
   ``
   [into ind]
   (each elt ind
