@@ -2,7 +2,7 @@
 (defn sort-by
   ``
   Sorts `x` in-place by calling a function `f` on each element and
-  comparing the result with `<`.
+  comparing the results with `<`.
 
   `x` can be a buffer, array, or abstract type with suitable `get`,
   `put`, and `length` methods.
