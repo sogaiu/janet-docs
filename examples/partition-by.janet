@@ -3,7 +3,7 @@
   ``
   Partition values of `x` by a function `f`. Partitions split when `f`
   applied to a value changes result when iterating to the next value
-  of `x`.  Returns a new array of arrays.
+  of `x`. Returns a new array of arrays.
 
   `x` can be a bytes, indexed, fiber, or abstract type with suitable
   `get` and `next` methods.
