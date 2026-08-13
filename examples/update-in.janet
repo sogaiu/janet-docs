@@ -3,9 +3,9 @@
   ``
   Update a value in `x`. Looks into a nested spot in `x` identified by
   the keys `ks` and replaces the value found there with `f` applied to
-  that value and any values passed and available in `args`.  Missing
+  that value and any values passed and available in `args`. Missing
   spots will be replaced with tables and `f` is passed `nil` instead
-  of a found value.  Returns `x` modified.
+  of a found value. Returns `x` modified.
 
   `x` can be a suitable array, table or abstract type with `get` and
   `put` methods.
