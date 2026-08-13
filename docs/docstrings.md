@@ -1,12 +1,10 @@
 # Guidelines for Docstrings
 
-The following are the start of some notes on docstring construction.
-As with the guidelines for examples, taking a look at some specific
-items (in this case, docstrings, say, on [the Core API
+The following are evolving guidelines for docstring construction.  As
+with the guidelines for examples, taking a look at some specific items
+(in this case, docstrings, say, on [the Core API
 page](https://janet-lang.org/api/index.html)) while reading the points
-below may help with arriving at a decent understanding.  Having said
-that, the guidelines here are much less developed than those for the
-Core API examples.
+below may help with arriving at a clearer understanding.
 
 To get an idea of some of the background for previous (and ongoing)
 work on improving docstrings, please have a look at [some relevant
@@ -17,21 +15,30 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
 
 1. Docstrings should not contain examples / tutorial-like material
 
-   See the commit message [here](https://github.com/janet-lang/janet/commit/5de889419ff26b710b706958bf99e180d084f564).
+   Short examples can live on the Core API page and some longer form
+   material can live in the website's main prose.
 
-2. Aim for correctness of docstrings and express using some background
-   knowledge obtainable from the website docs prose
+   See [this commit
+   message](https://github.com/janet-lang/janet/commit/5de889419ff26b710b706958bf99e180d084f564)
+   for some history.
 
-   As an example, the terms "bytes type", "indexed type", and
-   "dictionary" are all defined clearly on the data structures page (as
-   well as [being referred to in
-   `janet.h`](https://github.com/janet-lang/janet/blob/4370ae8acc5f1141a241becb8b2a2badc75ac8fe/src/include/janet.h#L607-L609)).
+2. Express with background knowledge and terms from the website prose
 
-   Docstrings may not be the place to be learning certain kinds of
+   Docstrings may not be a good place to be learning certain kinds of
    basic information about Janet.
 
+   As an example of term use, the phrases "bytes type", "indexed
+   type", and "dictionary" are all defined clearly on [the data
+   structures
+   page](https://janet-lang.org/docs/data_structures/index.html) (as
+   well as [being referred to in
+   `janet.h`](https://github.com/janet-lang/janet/blob/4370ae8acc5f1141a241becb8b2a2badc75ac8fe/src/include/janet.h#L607-L609)).
+   In many cases it makes sense to use these terms instead of spelling
+   things out, e.g. "bytes type" can be used in place of "strings,
+   buffers, keywords, and symbols".
+
    Try to use terms that have clear definitions on the website
-   (eventually the glossary).  Some examples include:
+   (eventually the glossary as well).  Some examples include:
 
    * bytes type - string, buffer, symbol, or keyword
    * indexed type - tuple or array
@@ -40,8 +47,7 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
 
    An exception might be "data structure".  See below for more details.
 
-3. There are some terms which might be better to avoid (at least at
-   first)
+3. There are some terms which might be better to avoid
 
    Below are some terms under consideration:
 
