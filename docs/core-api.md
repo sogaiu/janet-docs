@@ -1,7 +1,7 @@
-# Guidelines for Core API Examples
+# Guidelines for Core API Page Examples
 
 The following are evolving guidelines for the construction of Core API
-examples.
+page examples.
 
 Taking a look at the [Core API
 page](https://janet-lang.org/api/index.html) while going through the
