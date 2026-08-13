@@ -2,7 +2,7 @@
 (defn walk
   ``
   Iterate over `ast` and apply `f` to encountered items, collecting
-  the results in a result of the same type.  For indexed types, `f` is
+  the results in a result of the same type. For indexed types, `f` is
   applied only to its values, while for dictionaries, `f` is applied
   to keys as well as values.
 
