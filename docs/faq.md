@@ -91,7 +91,7 @@ README](https://github.com/janet-lang/janet/blob/4370ae8acc5f1141a241becb8b2a2ba
    [Here](https://github.com/sogaiu/janet-examples) is a collection of
    relevant links.
 
-9. Where do Janeteers hang out?
+9. Where do Janetors hang out?
 
    ATM, the most active may be the [Zulip
    instance](https://janet.zulipchat.com).
