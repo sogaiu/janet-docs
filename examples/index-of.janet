@@ -2,7 +2,7 @@
 (defn index-of
   ``
   Find the first key associated with a value `v` in `x`, acting like a
-  reverse lookup.  Will not look at dictionary prototypes.  If not
+  reverse lookup. Will not look at dictionary prototypes. If not
   found, returns `dflt` if provided and `nil` otherwise.
 
   `x` can be a bytes, indexed, dictionary, fiber, or abstract type
