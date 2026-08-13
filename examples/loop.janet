@@ -50,7 +50,7 @@
       :modifier argument
 
   where `:modifier` is one of a set of keywords, and `argument` is
-  keyword-dependent.  `:modifier` can be one of:
+  keyword-dependent. `:modifier` can be one of:
 
   * `:while expression` -- breaks from the current loop if
     `expression` is falsey.
