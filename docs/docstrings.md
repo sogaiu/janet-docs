@@ -99,8 +99,8 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
      ATM, it seems that we might as well say something like "responds
      to `next`" or "has `get` support", particularly because there are
      a number of cases where we want to say that an abstract type that
-     has implementations of more than one of associated methods
-     (e.g. `get` and `next`) is relevant.
+     has implementations of more than one of the associated methods
+     (e.g. `get` and `next`).
 
 ## Size, Features, and Format
 
