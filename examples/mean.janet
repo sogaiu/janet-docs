@@ -1,7 +1,7 @@
 ```
 (defn mean
   ``
-  Returns the mean of `x`. If empty, returns `math/nan`.
+  Returns the mean of the values of `x`. If empty, returns `math/nan`.
 
   `x` can be a bytes, indexed, dictionary, fiber, or abstract type
   with suitable `get` and `next` methods.
