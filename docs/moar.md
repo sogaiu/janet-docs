@@ -14,6 +14,6 @@ additional content:
   bundles](https://github.com/janet-lang/janet-lang.org/issues/312)
 * [janet-pm](https://janet.zulipchat.com/#narrow/channel/493321-janet-pm/topic/docs.20on.20the.20website.3F/near/614981340)
 * Glossary - relevant concepts and terms need to be identified,
-  recorded, and presented appropriately; see [earlier
-  link](https://github.com/sogaiu/janet-glossary) for some earlier
-  incomplete work
+  recorded, and presented appropriately; see [this
+  repository](https://github.com/sogaiu/janet-glossary) for some
+  earlier incomplete work
