@@ -5,6 +5,7 @@ Some subjects lack appropriate coverage on the website.
 The following are some ideas for things that might benefit from
 additional content:
 
+* About Janet documentation - see [this](./meta.md)
 * Functions in janet's
   [`value.c`](https://github.com/janet-lang/janet/blob/ef69c8922138a89bcd546b8116af3229fd43b347/src/core/value.c)
   that implement `next`, `get`, etc. behavior
