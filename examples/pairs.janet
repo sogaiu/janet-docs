@@ -57,8 +57,9 @@
   # =>
   @[[:a 1] [:b 2]]
 
-  (sort (pairs @{:a 1 :b 2}))
+  (sort (pairs @{0 :zero 1 :one}))
   # =>
+  @[[0 :zero] [1 :one]]
 
   )
 
