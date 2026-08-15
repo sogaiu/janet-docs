@@ -17,7 +17,6 @@
     (set res (f res (in x k)))
     (set k (next x k)))
   res)
-
 ```
 
 (comment
