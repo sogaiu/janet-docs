@@ -1,0 +1,19 @@
+# Ideas for More Janet Website Content
+
+Some subjects lack appropriate coverage on the website.
+
+The following are some ideas for things that might benefit from
+additional content:
+
+* Functions in `value.c` that implement `next`, `get`, etc.
+* Abstract types - see [this collection of
+  links](https://github.com/sogaiu/janet-abstract-type-notes) for some
+  existing info
+* [inttypes](https://github.com/janet-lang/janet-lang.org/issues/356)
+* [Janet
+  bundles](https://github.com/janet-lang/janet-lang.org/issues/312)
+* [janet-pm](https://janet.zulipchat.com/#narrow/channel/493321-janet-pm/topic/docs.20on.20the.20website.3F/near/614981340)
+* Glossary - relevant concepts and terms need to be identified,
+  recorded, and presented appropriately; see [earlier
+  link](https://github.com/sogaiu/janet-glossary) for some earlier
+  incomplete work
