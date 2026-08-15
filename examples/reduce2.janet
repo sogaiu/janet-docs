@@ -34,17 +34,17 @@
 
 (comment
 
-  (reduce2 + [1 2 3])
+  (reduce2 / [32 8 4])
   # =>
-  6
+  1
 
   )
 
 (comment
 
-  (reduce2 / {:a 1 :b 2 :c 4})
+  (reduce2 * {:a 1 :b 2 :c 4})
   # =>
-  0.5
+  8
 
   )
 
