@@ -6,7 +6,7 @@
   only one of those values will become a key in the returned table.
 
   `x` can be a bytes, indexed, dictionary, or abstract type with a
-  `next` method.
+  `suitable next` method.
   ``
   [x]
   (def ret @{})
