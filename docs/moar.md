@@ -5,7 +5,7 @@ Some subjects lack appropriate coverage on the website.
 The following are some ideas for things that might benefit from
 additional content:
 
-* Functions in `value.c` that implement `next`, `get`, etc.
+* Functions in `value.c` that implement `next`, `get`, etc. behavior
 * Abstract types - see [this collection of
   links](https://github.com/sogaiu/janet-abstract-type-notes) for some
   existing info
