@@ -28,7 +28,7 @@
 
 (comment
 
-  (keys ['alice 'bob 'eve])
+  (keys @['alice 'bob 'eve])
   # =>
   @[0 1 2]
 
