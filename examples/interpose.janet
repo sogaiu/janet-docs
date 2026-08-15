@@ -1,8 +1,7 @@
 ```
 (defn interpose
   ``
-  Returns an array of the elements of `x` separated by
-  `sep`.
+  Returns an array of the values of `x` separated by `sep`.
 
   `x` can be a bytes, indexed, fiber or abstract type with suitable
   `get` and `next` methods.
