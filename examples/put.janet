@@ -21,6 +21,10 @@ janet_quick_asm(env, JANET_FUN_PUT,
   # =>
   @"dam"
 
+  (put @"" 1 100)
+  # =>
+  @"\0d"
+
   )
 
 (comment
@@ -28,6 +32,10 @@ janet_quick_asm(env, JANET_FUN_PUT,
   (put @[:a :B :c] 1 :b)
   # =>
   @[:a :b :c]
+
+  (put @[] 2 :c)
+  # =>
+  @[nil nil :c]
 
   )
 
