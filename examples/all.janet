@@ -20,3 +20,61 @@
   res)
 ```
 
+(comment
+
+  (all |(< $ (chr "m")) "abc")
+  # =>
+  true
+
+  )
+
+(comment
+
+  (all pos? [1 2 3])
+  # =>
+  true
+
+  (all pos? [1 2 -3])
+  # =>
+  false
+
+  (all pos? [])
+  # =>
+  true
+
+  (all truthy? [1 2 3])
+  # =>
+  true
+
+  (all truthy? [1 2 nil])
+  # =>
+  false
+
+  # variadic
+  (all (fn [x y] (pos? (* x y))) [-1 2] [-2 1])
+  # =>
+  true
+
+  # predicate may not be applied to all values (e.g. 43)
+  (all |(neg? (+ $0 $1 $2)) [-2 2] [1 -8] [0 1 43])
+  # =>
+  true
+
+  )
+
+(comment
+
+  (all even? {:a 2 :b 8 :c 20})
+  # =>
+  true
+
+  )
+
+(comment
+
+  (all pos? (coro (yield 1) (yield 2)))
+  # =>
+  true
+
+  )
+
