@@ -13,15 +13,25 @@ JANET_CORE_FN(cfun_peg_compile,
 
 (comment
 
-  (peg/compile :a)
+  (peg/match (peg/compile :a) "J")
+  # =>
+  @[]
 
-  (peg/compile 1)
+  (peg/match (peg/compile 1) "_")
+  # =>
+  @[]
 
-  (peg/compile '(any 1))
+  (peg/match (peg/compile '(any 1)) "")
+  # =>
+  @[]
 
-  (peg/compile ~{:main (some :line) :line (thru "\n")})
+  (peg/match (peg/compile ~{:main (some :line) :line (thru "\n")}) "!\n")
+  # =>
+  @[]
 
-  (peg/compile ~@{:main (* :h+ :ws :a+) :ws (set " \t")})
+  (peg/match (peg/compile ~@{:main (* :h+ :ws :a+) :ws (set " \t")}) "0A Z")
+  # =>
+  @[]
 
   )
 
