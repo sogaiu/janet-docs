@@ -1,11 +1,11 @@
 ```
 (defn accumulate
   ``
-  Similar to `reduce`, but accumulates intermediate values into an
-  array. The last element in the array is what would be the return
-  value from `reduce`. The `init` value is not added to the array (the
-  return value will have the same number of elements as `x`). Returns
-  a new array.
+  Similar to `reduce`, but accumulates successive results of applying
+  `f` into a new array. The last element in the array is what would be
+  the return value from `reduce`. The `init` value is not added
+  directly as the first value of the new array, i.e. the returned
+  array will have the same number of elements as `x`.
 
   `x` can be a bytes, indexed, dictionary, fiber, or abstract type
   with suitable `get` and `next` methods.
