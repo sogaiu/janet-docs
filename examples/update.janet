@@ -3,7 +3,7 @@
   ``
   For a given key in `x`, replace its associated value with the result
   of applying `f` to that value. If `args` are provided, they will be
-  passed along to `func` as well. Returns updated `x`.
+  passed along to `f` as well. Returns updated `x`.
 
   `x` can be a buffer, array, table, or suitable abstract type with
   `get` and `put` methods.
