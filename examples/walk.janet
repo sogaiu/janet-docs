@@ -1,3 +1,4 @@
+# XXX: don't make prs for - discourage use of walk?
 ```
 (defn walk
   ``
