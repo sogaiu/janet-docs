@@ -1,9 +1,10 @@
 ```
 JANET_CORE_FN(cfun_ffi_buffer_read,
               "(ffi/read ffi-type bytes &opt offset)",
-              "Parse a native struct out of a buffer and convert it to normal "
-              "Janet value. This function is the inverse of `ffi/write`. "
-              "`bytes` can also be a raw pointer, although this is unsafe.") {
+              "Parse a native struct out of a bytes type and convert it "
+              "to normal Janet value. This function is the inverse of "
+              "`ffi/write`. `bytes` can also be a raw pointer, although "
+              "this is unsafe.") {
     janet_sandbox_assert(JANET_SANDBOX_FFI_USE);
     janet_arity(argc, 2, 3);
     JanetFFIType type = decode_ffi_type(argv[0]);
