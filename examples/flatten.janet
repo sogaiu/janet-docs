@@ -1,7 +1,7 @@
 ```
 (defn flatten
   ``
-  Returns a depth first traversal of an indexed type `ind` as a new
+  Returns a depth-first traversal of an indexed type `ind` as a new
   array.
   ``
   [ind]
