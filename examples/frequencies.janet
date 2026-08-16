@@ -9,7 +9,7 @@
   [x]
   (def freqs @{})
   (each elt x
-    (put freqs elt (inc (in freqs elt))))
+    (put freqs elt (inc (in freqs elt 0))))
   freqs)
 ```
 
