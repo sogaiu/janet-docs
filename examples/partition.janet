@@ -8,7 +8,6 @@
 
   `x` can be a bytes, indexed, fiber, or abstract type with suitable
   `get` and `next` methods.
-
   ``
   [n x]
   (cond
