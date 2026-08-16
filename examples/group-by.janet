@@ -1,11 +1,11 @@
 ```
 (defn group-by
   ``
-  Group values of `x` by a function `f` and put the results into a
-  new table. The keys of the table are the distinct return values from
-  calling `f` on the values of `x`. The values of the table are
-  arrays of all values of `x` for which `f` called on the value
-  equals that corresponding key.
+  Group values of `x` by a function `f` and put the results into a new
+  table. The keys of the table are the distinct return values from
+  calling `f` on the values of `x`. The values of the table are arrays
+  of all values of `x` for which `f` called on the value equals that
+  corresponding key.
 
   `x` can be a bytes, indexed, dictionary, fiber, or abstract type
   with suitable `get` and `next` methods.
