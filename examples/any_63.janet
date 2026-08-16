@@ -1,7 +1,6 @@
 ```
 (defn any?
   ``
-
   Evaluates to the last element of `x` if all preceding elements are
   falsey, `nil` if `x` is empty, or otherwise to the first truthy
   element.
