@@ -1,7 +1,7 @@
 ```
 (defn last
   ``
-  Get the last element from `x`.
+  Get the final element from `x`.
 
   `x` can be a bytes, indexed, or abstract type value with suitable
   `get` and `length` methods.
