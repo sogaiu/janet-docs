@@ -11,8 +11,7 @@
   (var k (next x nil))
   (var ret dflt)
   (while (not= nil k)
-    (def item (in x k))
-    (when (pred item) (set ret k) (break))
+    (when (pred (in x k)) (set ret k) (break))
     (set k (next x k)))
   ret)
 ```
