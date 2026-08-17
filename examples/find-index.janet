@@ -8,15 +8,12 @@
   suitable `get` and `next` methods.
   ``
   [pred x &opt dflt]
-  (var k nil)
+  (var k (next x nil))
   (var ret dflt)
-  (while true
-    (set k (next x k))
-    (if (= k nil) (break))
+  (while (not= nil k)
     (def item (in x k))
-    (when (pred item)
-      (set ret k)
-      (break)))
+    (when (pred item) (set ret k) (break))
+    (set k (next x k)))
   ret)
 ```
 
