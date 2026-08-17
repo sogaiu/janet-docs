@@ -2,7 +2,7 @@
 (defn find
   ``
   Find the first value in `x` that satisfies `pred`. If not found,
-  returns `dflt` if given, or `nil` otherwise.
+  return `dflt` if given, or `nil` otherwise.
 
   `x` can be a bytes, indexed, dictionary, fiber, or abstract type
   with suitable `get` and `next` methods.
