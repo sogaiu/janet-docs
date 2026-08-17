@@ -1,18 +1,18 @@
 ```
 (defn index-of
   ``
-  Find the first key associated with a value `v` in `x`, acting like a
-  reverse lookup. Will not look at dictionary prototypes. If not
+  Find the first key associated with a value `val` in `x`, acting like
+  a reverse lookup. Will not look at dictionary prototypes. If not
   found, returns `dflt` if provided and `nil` otherwise.
 
   `x` can be a bytes, indexed, dictionary, fiber, or abstract type
   with suitable `get` and `next` methods.
   ``
-  [v x &opt dflt]
+  [val x &opt dflt]
   (var k (next x nil))
   (var ret dflt)
   (while (not= nil k)
-    (when (= (in x k) v) (set ret k) (break))
+    (when (= (in x k) val) (set ret k) (break))
     (set k (next x k)))
   ret)
 ```
