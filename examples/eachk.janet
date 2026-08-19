@@ -7,6 +7,6 @@
   `x` can be a bytes, indexed, dictionary, fiber, or abstract type
   with a suitable `next` method.
   ``
-  [binding ds & body]
+  [binding x & body]
   (each-template binding x :keys body))
 ```
