@@ -4,7 +4,7 @@
   Reverses the order of the values in `x`. If `x` is a bytes type,
   returns a buffer, otherwise returns an array.
 
-  `x` can be a bytes, tuple, fiber, or abstract type with suitable
+  `x` can be a bytes, indexed, fiber, or abstract type with suitable
   `get` and `next` methods.
   ``
   [x]
