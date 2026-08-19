@@ -5,8 +5,10 @@
                          "Returns the length or count of `x` as an integer. "
                          "Returns are guaranteed to be in constant time "
                          "except for abstract types. For dictionaries, "
-                         "returns the number of key-value pairs. `x` can "
-                         "also be a bytes or indexed type."));
+                         "returns the number of key-value pairs.\n"
+                         "\n"
+                         "`x` can be a bytes, indexed, dictionary, or "
+                         "abstract type with a suitable `length` method."));
 ```
 
 (comment
