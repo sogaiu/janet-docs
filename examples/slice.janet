@@ -1,15 +1,14 @@
 ```
 JANET_CORE_FN(janet_core_slice,
               "(slice x &opt start end)",
-              "Extract a sub-range of `x`.\n"
+              "Extract a sub-range of `x`. Sub-ranges may be "
+              "specified via suitable choices of optional "
+              "arguments `start` and `end`.\n"
               "\n"
               "If `x` is a bytes or abstract type with a suitable "
               "`bytes` method, returns a string.\n"
               "\n"
-              "If `x` is an indexed type, returns a tuple.\n"
-              "\n"
-              "Combinations of optional arguments `start` and "
-              "`end` can be given to specify the sub-range.") {
+              "If `x` is an indexed type, returns a tuple.\n") {
     JanetRange range;
     JanetByteView bview;
     JanetView iview;
