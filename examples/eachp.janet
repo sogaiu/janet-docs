@@ -8,5 +8,5 @@
   with suitable `get` and `next` methods.
   ``
   [binding x & body]
-  (each-template binding ds :pairs body))
+  (each-template binding x :pairs body))
 ```
