@@ -9,8 +9,8 @@
   [x]
   (def ret @[])
   (def seen @{})
-  (each v x (when (not (in seen v))
-              (put seen v true) (array/push ret v)))
+  (each v x
+    (unless (in seen v) (put seen v true) (array/push ret v)))
   ret)
 ```
 
