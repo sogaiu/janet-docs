@@ -8,7 +8,7 @@ JANET_CORE_FN(janet_core_slice,
               "If `x` is a bytes or abstract type with a suitable "
               "`bytes` method, returns a string.\n"
               "\n"
-              "If `x` is an indexed type, returns a tuple.\n") {
+              "If `x` is an indexed type, returns a tuple.") {
     JanetRange range;
     JanetByteView bview;
     JanetView iview;
