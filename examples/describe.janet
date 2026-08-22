@@ -9,6 +9,7 @@ JANET_CORE_FN(janet_core_describe,
     for (int32_t i = 0; i < argc; ++i)
         janet_description_b(b, argv[i]);
     return janet_stringv(b->data, b->count);
+}
 ```
 
 (comment
