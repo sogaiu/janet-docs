@@ -21,6 +21,9 @@ JANET_CORE_FN(cfun_ffi_buffer_read,
 }
 ```
 
+# XXX: ffi-type not described
+# XXX: offset not described
+
 # XXX: "type" instead of "data structure" because the following types
 #      can be returned...(i.e. not just "data structure"s)
 
