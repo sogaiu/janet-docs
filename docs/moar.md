@@ -16,6 +16,15 @@ additional content:
 * [Janet
   bundles](https://github.com/janet-lang/janet-lang.org/issues/312)
 * [janet-pm](https://janet.zulipchat.com/#narrow/channel/493321-janet-pm/topic/docs.20on.20the.20website.3F/near/614981340)
+* Negative index use
+  * [Explain the logic behing negative slice
+    indices](https://github.com/janet-lang/janet/pull/208)
+  * [Negative index in array.remove off by one
+    error?](https://github.com/janet-lang/janet/issues/1219)
+  * [array/remove: update final array index to be
+    -1](https://github.com/janet-lang/janet/pull/1224)
+  * [update docstrings for string/slice and
+    tuple/slice](https://github.com/janet-lang/janet/commit/c2e55b54869adafd59464900fd1b2d21600587df)
 * Glossary - relevant concepts and terms need to be identified,
   recorded, and presented appropriately; see [this
   repository](https://github.com/sogaiu/janet-glossary) for some
