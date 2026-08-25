@@ -13,7 +13,7 @@ JANET_CORE_FN(cfun_table_clone,
 
   (put t1 :b 2)
   # =>
-  @{:a 0 :b 2}
+  @{:a 1 :b 2}
 
   t2
   # =>
