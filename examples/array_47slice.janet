@@ -12,13 +12,13 @@ JANET_CORE_FN(cfun_array_slice,
 ```
 
 ```
-               | :a | :b | :c |
+                     | :a | :b | :c |
 
-item index:      0    1    2
+      item index:      0    1    2
 
-     slice:    0    1    2    3
+     slice index:    0    1    2    3
 
- neg slice:   -4   -3   -2   -1
+ neg slice index:   -4   -3   -2   -1
 
 ```
 
