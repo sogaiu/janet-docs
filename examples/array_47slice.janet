@@ -11,6 +11,17 @@ JANET_CORE_FN(cfun_array_slice,
               "Returns a new array.") {
 ```
 
+```
+               | :a | :b | :c |
+
+item index:      0    1    2
+
+     slice:    0    1    2    3
+
+ neg slice:   -4   -3   -2   -1
+
+```
+
 (comment
 
   (array/slice @[:a :b :c] 0 2)
