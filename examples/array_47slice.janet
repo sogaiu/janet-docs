@@ -21,6 +21,10 @@ JANET_CORE_FN(cfun_array_slice,
   # =>
   @[:b :c]
 
+  )
+
+(comment
+
   (array/slice @[:a :b :c] 1)
   # =>
   @[:b :c]
@@ -49,6 +53,10 @@ JANET_CORE_FN(cfun_array_slice,
   # =>
   @[:a :b :c]
 
+  )
+
+(comment
+
   (array/slice @[:a :b :c] -4 -1)
   # =>
   @[:a :b :c]
@@ -68,6 +76,22 @@ JANET_CORE_FN(cfun_array_slice,
   (protect (array/slice @[:a :b :c] -4 -5))
   # =>
   [false "end index -5 out of range [-4,3]"]
+
+  )
+
+(comment
+
+  (array/slice @[:a :b :c] -4 0)
+  # =>
+  @[]
+
+  (array/slice @[:a :b :c] -4 1)
+  # =>
+  @[:a]
+
+  (array/slice @[:a :b :c] -4 2)
+  # =>
+  @[:a :b]
 
   )
 
