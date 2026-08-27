@@ -103,6 +103,41 @@
   is 0 and `end` is the length of the buffer. Returns a new buffer.
   ``]
  #
+ ['count
+  '[pred x & xs]
+  ``
+  Count the number of values in `x` for which applying `pred` yields a
+  truthy value.
+
+  Also functions variadically, i.e. takes additional arguments, with
+  suitable changes to the arity of `pred`. `pred` is called with both
+  values from `x` and additional arguments, and only as many times as
+  the length of the shortest of `x` and each element of `xs`. If `x`
+  or any element of `xs` is empty, returns 0.
+
+  `x` and elements of `xs` can be values of type bytes, indexed,
+  dictionary, fiber, or abstract with suitable `get` and `next`
+  methods.
+  ``]
+ #
+ ['describe
+  '[x]
+  ``
+  Returns a string that is a human-readable description of `x`. For
+  indexed, dictionary, fiber, pointer, and some abstract types, the
+  string returned contains a pointer value from which the identity of
+  `x` can be determined.
+  ``]
+ #
+ ['distinct
+  '[x]
+  ``
+  Returns an array of the deduplicated values of `x`.
+
+  `x` can be a bytes, index, dictionary, fiber, or abstract type with
+  suitable `get` and `next` methods.
+  ``]
+ #
  ['keyword/slice
   '[bytes &opt start end]
   ``
