@@ -1,11 +1,11 @@
 ```
 JANET_CORE_FN(cfun_table_tostruct,
               "(table/to-struct tab &opt proto)",
-              "Create and return a struct based on a table `tab`. "
-              "If given, the optional argument `proto` specifies "
-              "a struct to be used as the newly created struct's "
-              "prototype. Note that if `proto` is not specified, "
-              "the newly created struct will not have a prototype.") {
+              "Return a struct based on a table `tab`. If given, "
+              "the optional argument `proto` specifies the new "
+              "struct's prototype. Note that if `proto` is not "
+              "specified, the new struct will not have a "
+              "prototype.") {
 ```
 
 (comment
