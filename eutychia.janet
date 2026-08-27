@@ -70,6 +70,7 @@
   `x` can be a bytes, indexed. dictionary, fiber, or abstract type
   with suitable `get` and `next` methods.
   ``]
+ #
  ['array/insert
   '[arr at & xs]
   ``
@@ -78,7 +79,81 @@
   index backwards from the end of `arr`, inserting after the index
   such that inserting at -1 appends to `arr`.  Returns the array.
   ``]
- ])
+ #
+ ['array/slice
+  '[arrtup &opt start end]
+  ``
+  Takes a slice of an array or tuple from `start` to `end`. The range
+  is half open, [start, end).  Indices can also be negative,
+  indicating indexing from the end of the array. By default, `start`
+  is 0 and `end` is the length of the array. Note that if the range is
+  negative, it is taken as (start, end] to allow a full negative slice
+  range.  Returns a new array.
+  ``]
+ #
+ ['buffer/slice
+  '[bytes &opt start end]
+  ``
+  Takes a slice of a byte sequence from `start` to `end`. The range is
+  half open, [start, end).  Indexes can also be negative, indicating
+  indexing from the end of the end of the array. By default, `start`
+  is 0 and `end` is the length of the buffer.  Returns a new buffer.
+  ``]
+ #
+ ['keyword/slice
+  '[bytes &opt start end]
+  ``
+  Same as string/slice, but returns a keyword.
+  ``]
+ #
+ ['slice
+  '[x &opt start end]
+  ``
+  Extract a sub-range of `x`. Sub-ranges may be specified via suitable
+  choices of optional arguments `start` and `end`.
+
+  If `x` is a bytes or abstract type with a suitable `bytes` method,
+  returns a string.
+
+  If `x` is an indexed type, returns a tuple.
+  ``]
+ #
+ ['string/slice
+  '[bytes &opt start end]
+  ``
+  Returns a substring from a byte sequence. The substring is from
+  index `start` inclusive to index `end`, exclusive. All indexing is
+  from 0. `start` and `end` can also be negative to indicate indexing
+  from the end of the string. Note that if `start` is negative it is
+  exclusive, and if `end` is negative it is inclusive, to allow a full
+  negative slice range.
+  ``]
+ #
+ ['symbol/slice
+  '[arrtup &opt start end]
+  ``
+  Take a sub-sequence of an array or tuple from index `start`
+  inclusive to index `end` exclusive. If `start` or `end` are not
+  provided, they default to 0 and the length of `arrtup`,
+  respectively. `start` and `end` can also be negative to indicate
+  indexing from the end of the input. Note that if `start` is negative
+  it is exclusive, and if `end` is negative it is inclusive, to allow
+  a full negative slice range. Returns the new tuple.
+  ``]
+ #
+ ['tuple/slice
+  '[arrtup &opt start end]
+  ``
+  Take a sub-sequence of an array or tuple from index `start`
+  inclusive to index `end` exclusive. If `start` or `end` are not
+  provided, they default to 0 and the length of `arrtup`,
+  respectively. `start` and `end` can also be negative to indicate
+  indexing  from the end of the input. Note that if `start` is
+  negative it is exclusive, and if `end` is negative it is
+  inclusive, to allow a full negative slice range. Returns the new
+  tuple.
+  ``]
+  ])
 
 # process all overrides
 (each [name sig docstr] overrides
