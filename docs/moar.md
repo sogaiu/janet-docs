@@ -27,6 +27,9 @@ additional content:
     tuple/slice](https://github.com/janet-lang/janet/commit/c2e55b54869adafd59464900fd1b2d21600587df)
 * Upgrading concerns
   * native modules may need to be recompiled
+    * jpm
+      * jpm clear-cache
+      * jpm update-installed
   * `.jimage` files may need to be rebuilt
 * Glossary - relevant concepts and terms need to be identified,
   recorded, and presented appropriately; see [this
