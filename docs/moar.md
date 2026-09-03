@@ -15,7 +15,9 @@ additional content:
 * [inttypes](https://github.com/janet-lang/janet-lang.org/issues/356)
 * [Janet
   bundles](https://github.com/janet-lang/janet-lang.org/issues/312)
-* [janet-pm](https://janet.zulipchat.com/#narrow/channel/493321-janet-pm/topic/docs.20on.20the.20website.3F/near/614981340)
+* janet-pm
+  * [Zulip topic message](https://janet.zulipchat.com/#narrow/channel/493321-janet-pm/topic/docs.20on.20the.20website.3F/near/614981340)
+  * [janet-lang.org issue](https://github.com/janet-lang/janet-lang.org/issues/427)
 * Negative index use
   * [Explain the logic behing negative slice
     indices](https://github.com/janet-lang/janet/pull/208)
