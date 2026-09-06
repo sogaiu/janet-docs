@@ -58,6 +58,24 @@
   # =>
   @{:x @[0 @{:a @[@"hi" 1]}]}
 
+  (def key [:hi])
+  (def value [0 {:a ["hi" 1]}])
+  (def tab @{key value})
+  (def thawed (thaw tab))
+  (def new-key (first (keys thawed)))
+
+  (tuple? key)
+  # =>
+  true
+
+  (array? new-key)
+  # =>
+  true
+
+  (deep= new-key (array ;key))
+  # =>
+  true
+
   )
 
 (comment
