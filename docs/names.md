@@ -23,7 +23,13 @@ more consistent.
 
 * `bodies` - `ev/gather`
 
-* `buf` -
+* `buf` - `buffer/bit`, `buffer/bit-clear`, `buffer/bit-set`,
+  `buffer/bit-toggle`, `buffer/clear`, `buffer/fill`, `buffer/format`,
+  `buffer/format-at`, `buffer/popn`, `buffer/push`, `buffer/push-at`,
+  `buffer/push-byte`, `buffer/push-float32`, `buffer/push-float64`,
+  `buffer/push-string`, `buffer/push-uint16`, `buffer/push-uint32`,
+  `buffer/push-uint64`, `buffer/push-word`, `buffer/trim`, `ev/chunk`,
+  `ev/read`, `ffi/write`, `int/to-bytes`, `marshal`, `unmarshal`
 
 * `dflt` -
 
