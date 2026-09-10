@@ -1,4 +1,4 @@
-# Parameter Names in `boot.janet`
+# Parameter Names in `boot.janet` and `.c` files
 
 There is some degree of reuse among parameter names in `boot.janet`
 and in the `.c` files.  After reviewing, possibly usages might be made
