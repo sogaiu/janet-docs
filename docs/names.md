@@ -1,7 +1,8 @@
 # Parameter Names in `boot.janet`
 
-There is some degree of reuse among parameter names in `boot.janet`.
-After reviewing, possibly usages might be made more consistent.
+There is some degree of reuse among parameter names in `boot.janet`
+and in the `.c` files.  After reviewing, possibly usages might be made
+more consistent.
 
 ## Potential for Convention
 
@@ -20,6 +21,12 @@ After reviewing, possibly usages might be made more consistent.
   `ev/do-thread`, `ev/with-lock`, `ev/with-rlock`, `ev/with-wlock`,
   `ev/spawn-thread`, `ev/with-deadline`, `ffi/defbind-alias`, `ffi/defbind`
 
+* `bodies` - `ev/gather`
+
+* `buf` -
+
+* `dflt` -
+
 * `dict` - `kvs`
 
 * `dicts` - `merge-into`, `merge`
@@ -28,6 +35,8 @@ After reviewing, possibly usages might be made more consistent.
   `dofile`, `all-bindings`, `all-dynamics`, `repl`
 
 * `f` - `sort-by`, `sorted-by`, `ev/call`
+
+* `fib` -
 
 * `fmt` - `maclintf`, `errorf`, `assertf`
 
@@ -61,6 +70,8 @@ After reviewing, possibly usages might be made more consistent.
 
 * `pred` - `filter`, `count`, `keep`, `find-index`, `find`, `take-until`,
   `take-while`, `drop-until`, `drop-while`, `all`, `some`
+
+* `ps` / `prs` -
 
 * `tab` - `merge-into`
 
