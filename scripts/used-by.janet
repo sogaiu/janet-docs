@@ -13,8 +13,7 @@
       (each s syms
         (if (not (get params s))
           (put params s @[sym])
-          (array/push (get params s) sym)))
-      (printf "%s: %s" sym sig-str)))
+          (array/push (get params s) sym)))))
   (each p (sort (keys params))
     (printf "%s: %s" p (string/join (get params p) ", "))))
 
