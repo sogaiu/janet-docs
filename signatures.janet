@@ -11,7 +11,7 @@
       (put p :sig "(tuple/slice arrtup &opt start end)"))
     (when-let [sig-str (get p :sig)]
       (++ tot)
-      (printf "%s: %s" sym sig-str)))
+      (printf "%s" sig-str)))
   #(print)
   #(printf "total: %d" tot)
   )
