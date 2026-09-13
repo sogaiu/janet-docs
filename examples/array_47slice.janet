@@ -90,6 +90,19 @@ JANET_CORE_FN(cfun_array_slice,
 
   )
 
+# XXX: following commit added a string.mdz document
+#      containing an example of using string/slice
+#      with:
+#
+#       (string/slice "abcdefg" 2 -2) # -> "cdef"
+#
+#      note it has a non-negative start used with
+#      a negative end argument.  the commit was
+#      authored by bakpakin so it is suggestive that
+#      using a mix of non-negative and negative
+#      arguments was intentional.
+#
+#      https://github.com/janet-lang/janet-lang.org/commit/568b6b8c2ddd769afb9e32fd99476036ce753d44
 (comment
 
   (array/slice @[:a :b :c] -4 0)
