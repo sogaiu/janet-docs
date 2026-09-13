@@ -31,7 +31,7 @@ more consistent.
   `buffer/push-uint64`, `buffer/push-word`, `buffer/trim`, `ev/chunk`,
   `ev/read`, `ffi/write`, `int/to-bytes`, `marshal`, `unmarshal`
 
-* `dflt` -
+* `dflt` - `dyn`
 
 * `dict` - `kvs`
 
@@ -58,7 +58,7 @@ more consistent.
 
 * `init` - `varglobal`, `reduce`, `accumulate`
 
-* `key` - `has-key?`, `update`
+* `key` - `dyn`, `has-key?`, `setdyn`, `update`
 
 * `ks` - `zipcoll`, `get-in`, `update-in`, `put-in`
 
@@ -79,7 +79,9 @@ more consistent.
 
 * `ps` / `prs` -
 
-* `tab` - `merge-into`
+* `tab` - `merge-into`, `table/clear`, `table/clone`,
+  `table/getproto`, `table/proto-flatten`, `table/rawget`,
+  `table/setproto`, `table/to-struct`
 
 * `str` - `parse`, `parse-all`, `eval-string`, `doc-format`
 
@@ -103,7 +105,7 @@ more consistent.
 
 ### val vs value
 
-* `val` - `default`
+* `val` - `default`, `setdyn`
 * `value` - `toggle`, `defglobal`, `return`, `has-value?`, `quit`
 
 I didn't realize that `val` and `value` had been used and introduced
