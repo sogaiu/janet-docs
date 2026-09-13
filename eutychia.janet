@@ -200,7 +200,8 @@
       (when (= :file (os/stat fname :mode))
         (slurp fname))))
   (def sig-buf (buffer/push @"" ;(interpose " " sig)))
-  (def docstr-with-sig (string/format "(%s %s)\n\n%s" name sig-buf docstr))
+  (def docstr-with-sig
+       (string/format "!! (%s %s) !!\n\n%s" name sig-buf docstr))
   (def full-docstr
     (if extra
       (string docstr-with-sig
