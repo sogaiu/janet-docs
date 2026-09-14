@@ -175,8 +175,6 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
 
       * Janet function and macro names (e.g. `pp`, `each`)
 
-      * C function (with appended parens) (e.g. `sprintf()`)
-
    2. Things that might be ok:
 
       * "earmuffed items" like `*redef*`
@@ -197,7 +195,11 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
       * nil - some docstrings do this already, but not doing so
         takes less space and likely unambiguous in most cases?
 
-   4. May be things to be avoided:
+   4. Not sure:
+
+      * C function names (with appended parens) (e.g. `sprintf()`)
+
+   5. May be things to be avoided:
 
       * `r`, `w`, `a`, etc. in `file/open`'s docstring, these are not
         symbols or keywords, but rather characters that might occur
