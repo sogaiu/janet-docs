@@ -205,8 +205,7 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
 
       * Math intervals: `[1, 3]`, `(0, 5]`, etc.
 
-      * `:all:` - not keywords but strings, see source for
-        `module/add-paths`. May not be unambiguously told apart from
-        keywords...perhaps these should be surrounded in double
-        quotes?
+      * `:all:` - not keywords but strings, see `module/expand-path`.
+        May not be unambiguously told apart from keywords...perhaps
+        these should be surrounded in double quotes like: `":all:"`.
 
