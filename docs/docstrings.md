@@ -160,3 +160,52 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
    either), but the prose is going to be read and reviewed far more
    frequently.  Consider trying to choose shorter words.
 
+5. Backticks should not surround any old thing
+
+   [PR
+   comment](https://github.com/janet-lang/janet/pull/1862#issuecomment-5627605136)
+   from bakpakin:
+
+   > The original intention of the backticks were to be exclusively
+   > for function arguments or links to other bindings, but really any
+   > pattern that we can unambiguously convert to hyperlinks in the
+   > documentation would be good.
+
+   Things that are clearly ok include:
+
+   * Janet function and macro names (e.g. `pp`, `each`)
+
+   * C function (with appended parens) (e.g. `sprintf()`)
+
+   Things that might be ok:
+
+   * "earmuffed items" like `*redef*`
+
+   Other things that might work:
+
+   * Janet calls (paren tuples) (e.g. `(+ 1 2)`)
+
+   * Square bracket tuples (e.g. `[line col]`)
+
+   * Code that starts with reader macro characters like `~`, `|`, `@`,
+     `;`, etc.?
+
+   * Janet keywords (e.g. `:datagram`)
+
+   * Booleans (e.g. `true`)
+
+   * nil - some docstrings do this already, but not doing so
+     takes less space and likely unambiguous in most cases?
+
+   May be things to be avoided:
+
+   * `r`, `w`, `a`, etc. in `file/open`'s docstring, these are not
+     symbols or keywords, but rather characters that might occur
+     within a keyword.
+
+   * Math intervals: `[1, 3]`, `(0, 5]`, etc.
+
+   * `:all:` - not keywords but strings, see `module/add-paths`. May
+     not unambiguously told apart from keywords...perhaps these should
+     be surrounded in double quotes?
+
