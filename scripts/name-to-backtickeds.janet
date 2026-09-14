@@ -24,5 +24,5 @@
                (tabseq [k :in m] k true)
                @{}))
     #
-    (printf "%s: %j" sym (sort (keys bts)))))
+    (printf "%s - %j" sym (sort (keys bts)))))
 

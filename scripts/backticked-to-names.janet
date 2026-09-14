@@ -30,5 +30,5 @@
     (def names (if-let [_names (get seen elt)]
                  (tabseq [n :in _names] n true)
                  @{}))
-    (printf "%s: %j" elt (sort (keys names)))))
+    (printf "%s - %j" elt (sort (keys names)))))
 
