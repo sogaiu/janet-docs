@@ -171,6 +171,9 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
    > pattern that we can unambiguously convert to hyperlinks in the
    > documentation would be good.
 
+   Below is an attempt to classify some "backtick-surrounded" things
+   in Janet docstrings.
+
    1. Things that are clearly ok include:
 
       * Janet function and macro names (e.g. `pp`, `each`)
@@ -198,6 +201,15 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
    4. Not sure:
 
       * C function names (with appended parens) (e.g. `sprintf()`)
+
+      * Not quite Janet code (from `match` and `loop`):
+
+        * `& rest` - fragment
+        * `(@ <sym>)` - used in `match`
+        * `<sym>` - potential conflict with `<core/file>`, etc.?
+        * `'` - lone single quote
+        * `_`, `object` - neither a parameter nor function / macro name
+        * `:modifier` - stands in for `:while`, `:until`, etc.
 
    5. May be things to be avoided:
 
