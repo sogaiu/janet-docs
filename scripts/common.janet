@@ -28,11 +28,20 @@
       (++ n)
       (string/trim _line)))
   # everything else is the body
-  # XXX: could do more...may be lataer
-  #      e.g. 1. trim empty trailing lines
-  #           2. determine indentation by looking at first line,
-  #              then removing indentation from all lines
-  (def body-lines (array/slice lines n))
+  # find first non-empty line
+  (var i n)
+  (while (def _line (get lines i))
+    (when (not (empty? _line))
+      (break))
+    (++ i))
+  # find last non-empty line
+  (var j (dec (length lines)))
+  (while (def _line (get lines j))
+    (when (not (empty? _line))
+      (break))
+    (-- j))
+  # don't keep trailing lines
+  (def body-lines (array/slice lines i (inc j)))
   #
   @{:what what
     :location location
