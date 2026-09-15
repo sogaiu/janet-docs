@@ -231,13 +231,6 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
 
         * `+` - intent was to be part of a keyword (see `file/open`)
 
-      * Miscellaneous
-
-        * `*` - intent was to refer to asterisk character (see
-          `defdyn`)
-
-        * `A` - conversion specifier (see `string/format`)
-
    5. May be things to be avoided:
 
       * `r`, `w`, `a`, etc. in `file/open`'s docstring, these are not
@@ -249,4 +242,13 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
       * `:all:` - not keywords but strings, see `module/expand-path`.
         May not be unambiguously told apart from keywords...perhaps
         these should be surrounded in double quotes like: `":all:"`.
+
+      * Miscellaneous
+
+        * `*` - intent was to refer to asterisk character (see
+          `defdyn`); can confuse with built-in function of the same
+          name
+
+        * `A` - conversion specifier (see `string/format`); can confuse
+          with symbol of single letter
 
