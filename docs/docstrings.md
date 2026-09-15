@@ -202,14 +202,41 @@ message](https://janet.zulipchat.com/#narrow/channel/399615-general/topic/Janet.
 
       * C function names (with appended parens) (e.g. `sprintf()`)
 
+      * C code snippets (e.g. `argv[0]` see `*executable*`)
+
+      * C "constants" (e.g. `IN_ACCESS` see `filewatch/add`)
+
+      * Environment variable names (e.g. `TZ` see `os/date`)
+
+      * File name-ish things (e.g. `<stdio.h>`, `janetconf.h`)
+
       * Not quite Janet code (from `match` and `loop`):
 
+        * `$n` - actually a stand-in for `$0`, `$1`, etc.  May be
+          better expressed as `$<n>`, but that may still be
+          problematic from a detection standpoint?
+
         * `& rest` - fragment
+
         * `(@ <sym>)` - used in `match`
+
         * `<sym>` - potential conflict with `<core/file>`, etc.?
+
         * `'` - lone single quote
-        * `_`, `object` - neither a parameter nor function / macro name
+
+        * `_`, `object` - neither a parameter nor function / macro
+          name
+
         * `:modifier` - stands in for `:while`, `:until`, etc.
+
+        * `+` - intent was to be part of a keyword (see `file/open`)
+
+      * Miscellaneous
+
+        * `*` - intent was to refer to asterisk character (see
+          `defdyn`)
+
+        * `A` - conversion specifier (see `string/format`)
 
    5. May be things to be avoided:
 
