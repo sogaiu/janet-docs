@@ -1,0 +1,578 @@
+$ - :symbol
+$& - :symbol
+$n - :symbol
+& rest - :multiple-items
+' - :x/parse-fail
+((juxt* a  b c) x) - :tuple
+(@ <sym>) - :tuple
+(as-macro ,my-custom-macro arg1 arg2...) - :tuple
+(def  sym :shadow (if (= nil sym) val sym)) - :tuple
+(def name (fn name [args] ...)) - :tuple
+(drop-while (complement pred) ind) - :tuple
+(dyn  *syspath*) - :tuple
+(dyn *out*) - :tuple
+(dyn *pretty-format* "%q") - :tuple
+(dyn *syspath*) - :tuple
+(dyn :err stderr) - :tuple
+(dyn :out  stdout) - :tuple
+(dyn :out stdout) - :tuple
+(dyn :peg-grammar) - :tuple
+(dyn <first path segment as keyword>) - :tuple
+(error  (string/format fmt ;args)) - :tuple
+(ev/go  (fn [] ;body)) - :tuple
+(evaluator thunk source env where) - :tuple
+(f acc v) - :tuple
+(f x) - :tuple
+(fiber/current) - :tuple
+(fiber/getenv  (fiber/current)) - :tuple
+(fiber/new (fn [] ;body)  flags) - :tuple
+(fiber/new (fn [] ;body) :yi) - :tuple
+(fiber/root) - :tuple
+(if (not condition) else then) - :tuple
+(if-let bindings (do ;body)) - :tuple
+(in env :exit-value env) - :tuple
+(level line  col message) - :tuple
+(load-image bytes) - :tuple
+(make-image x) - :tuple
+(marshal x  make-image-dict) - :tuple
+(mod x 0) - :tuple
+(os/exit 1) - :tuple
+(os/link oldpath newpath true) - :tuple
+(pred  element) - :tuple
+(read env    source) - :tuple
+(set value (not  value)) - :tuple
+(string/format fmt ;xs) - :tuple
+(take-while (complement pred) ind) - :tuple
+(unmarshal bytes load-image-dict) - :tuple
+(upscope ;body) - :tuple
+(when (not condition) ;body) - :tuple
+* - :symbol
++ - :symbol
+0 - :number
+:<anonymous> - :keyword
+:a - :keyword
+:access - :keyword
+:accessed - :keyword
+:added - :keyword
+:after form - :multiple-items
+:all - :keyword
+:attrib - :keyword
+:attributes - :keyword
+:be - :keyword
+:before - :keyword
+:before form - :multiple-items
+:block - :keyword
+:blocks - :keyword
+:blocksize - :keyword
+:c - :keyword
+:changed - :keyword
+:character - :keyword
+:chunks - :keyword
+:close - :keyword
+:close-nowrite - :keyword
+:close-write - :keyword
+:cookie - :keyword
+:cputime - :keyword
+:create - :keyword
+:creation - :keyword
+:datagram - :keyword
+:debug - :keyword
+:delete - :keyword
+:delete-self - :keyword
+:dev - :keyword
+:dir-name - :keyword
+:directory - :keyword
+:double - :keyword
+:down - :keyword
+:down-to - :keyword
+:dst - :keyword
+:env - :keyword
+:err - :keyword
+:evaluator - :keyword
+:exit true - :multiple-items
+:expander - :keyword
+:export true - :multiple-items
+:extend - :keyword
+:fiber-flags - :keyword
+:fifo - :keyword
+:file - :keyword
+:file-name - :keyword
+:flycheck - :keyword
+:funlock - :keyword
+:gid - :keyword
+:hours - :keyword
+:ia - :keyword
+:ignored - :keyword
+:in - :keyword
+:int - :keyword
+:int-permissions - :keyword
+:ipv4 - :keyword
+:ipv6 - :keyword
+:iterate - :keyword
+:keys - :keyword
+:last-access - :keyword
+:last-write - :keyword
+:le - :keyword
+:let bindings - :multiple-items
+:link - :keyword
+:minutes - :keyword
+:mode - :keyword
+:modified - :keyword
+:modifier - :keyword
+:modify - :keyword
+:monotonic - :keyword
+:month - :keyword
+:month-day - :keyword
+:move-self - :keyword
+:moved-from - :keyword
+:moved-to - :keyword
+:n - :keyword
+:nlink - :keyword
+:none - :keyword
+:on-compile-error - :keyword
+:on-compile-warning - :keyword
+:on-parse-error - :keyword
+:on-status - :keyword
+:only [foo bar baz] - :multiple-items
+:open - :keyword
+:other - :keyword
+:out - :keyword
+:pairs - :keyword
+:parser - :keyword
+:permissions - :keyword
+:pipe - :keyword
+:q-overflow - :keyword
+:r - :keyword
+:range - :keyword
+:range-to - :keyword
+:rdev - :keyword
+:read - :keyword
+:realtime - :keyword
+:recursive - :keyword
+:removed - :keyword
+:rename - :keyword
+:renamed-new - :keyword
+:renamed-old - :keyword
+:repeat n - :multiple-items
+:revoke - :keyword
+:seconds - :keyword
+:security - :keyword
+:size - :keyword
+:socket - :keyword
+:source - :keyword
+:stream - :keyword
+:sys: - :x/blacklist
+:t - :keyword
+:truncate - :keyword
+:tuple - :keyword
+:type - :keyword
+:uid - :keyword
+:unix - :keyword
+:unknown - :keyword
+:unless condition - :multiple-items
+:unmount - :keyword
+:until expression - :multiple-items
+:verb - :keyword
+:w - :keyword
+:wd - :keyword
+:wd-path - :keyword
+:week-day - :keyword
+:when condition - :multiple-items
+:while expression - :multiple-items
+:wr - :keyword
+:write - :keyword
+:year - :keyword
+:year-day - :keyword
+< - :symbol
+<= - :symbol
+<stdio.h> - :x/path-ish
+<sym> - :symbol
+<sys/event.h> - :x/path-ish
+<sys/inotify.h> - :x/path-ish
+<time.h> - :x/path-ish
+= - :symbol
+> - :symbol
+>= - :symbol
+@[k v k v ...] - :array
+A - :x/blacklist
+E - :x/blacklist
+F - :x/blacklist
+FILE_APPEND_DATA - :x/c-flag-name-ish
+FILE_ATTRIBUTE_HIDDEN - :x/c-flag-name-ish
+FILE_ATTRIBUTE_OFFLINE - :x/c-flag-name-ish
+FILE_ATTRIBUTE_READONLY - :x/c-flag-name-ish
+FILE_ATTRIBUTE_TEMPORARY - :x/c-flag-name-ish
+FILE_FLAG_DELETE_ON_CLOSE - :x/c-flag-name-ish
+FILE_FLAG_NO_BUFFERING - :x/c-flag-name-ish
+FILE_FLAG_OVERLAPPED - :x/c-flag-name-ish
+FILE_NOTIFY_CHANGE_* - :x/c-flag-name-ish
+FILE_NOTIFY_CHANGE_ATTRIBUTES - :x/c-flag-name-ish
+FILE_NOTIFY_CHANGE_CREATION - :x/c-flag-name-ish
+FILE_NOTIFY_CHANGE_DIR_NAME - :x/c-flag-name-ish
+FILE_NOTIFY_CHANGE_LAST_ACCESS - :x/c-flag-name-ish
+FILE_NOTIFY_CHANGE_LAST_WRITE - :x/c-flag-name-ish
+FILE_NOTIFY_CHANGE_SECURITY - :x/c-flag-name-ish
+FILE_NOTIFY_CHANGE_SIZE - :x/c-flag-name-ish
+FILE_SHARE_DELETE - :x/c-flag-name-ish
+FILE_SHARE_READ - :x/c-flag-name-ish
+FILE_SHARE_WRITE - :x/c-flag-name-ish
+G - :x/blacklist
+IN_* - :x/c-flag-name-ish
+IN_ACCESS - :x/c-flag-name-ish
+IN_ALL_EVENTS - :x/c-flag-name-ish
+IN_ATTRIB - :x/c-flag-name-ish
+IN_CLOSE_NOWRITE - :x/c-flag-name-ish
+IN_CLOSE_WRITE - :x/c-flag-name-ish
+IN_CREATE - :x/c-flag-name-ish
+IN_DELETE - :x/c-flag-name-ish
+IN_DELETE_SELF - :x/c-flag-name-ish
+IN_IGNORED - :x/c-flag-name-ish
+IN_MODIFY - :x/c-flag-name-ish
+IN_MOVED_FROM - :x/c-flag-name-ish
+IN_MOVED_TO - :x/c-flag-name-ish
+IN_MOVE_SELF - :x/c-flag-name-ish
+IN_OPEN - :x/c-flag-name-ish
+IN_Q_OVERFLOW - :x/c-flag-name-ish
+IN_UNMOUNT - :x/c-flag-name-ish
+M - :x/blacklist
+N - :x/blacklist
+NOTE_* - :x/c-flag-name-ish
+NOTE_ATTRIB - :x/c-flag-name-ish
+NOTE_CLOSE - :x/c-flag-name-ish
+NOTE_CLOSE_WRITE - :x/c-flag-name-ish
+NOTE_DELETE - :x/c-flag-name-ish
+NOTE_EXTEND - :x/c-flag-name-ish
+NOTE_FUNLOCK - :x/c-flag-name-ish
+NOTE_LINK - :x/c-flag-name-ish
+NOTE_OPEN - :x/c-flag-name-ish
+NOTE_READ - :x/c-flag-name-ish
+NOTE_RENAME - :x/c-flag-name-ish
+NOTE_REVOKE - :x/c-flag-name-ish
+NOTE_TRUNCATE - :x/c-flag-name-ish
+NOTE_WRITE - :x/c-flag-name-ish
+O_APPEND - :x/c-flag-name-ish
+O_CREATE - :x/c-flag-name-ish
+O_EXCL - :x/c-flag-name-ish
+O_NOCTTY - :x/c-flag-name-ish
+O_NONBLOCK - :x/c-flag-name-ish
+O_SYNC - :x/c-flag-name-ish
+O_TRUNC - :x/c-flag-name-ish
+P - :x/blacklist
+Q - :x/blacklist
+SO_REUSEADDR - :x/c-flag-name-ish
+SO_REUSEPORT - :x/c-flag-name-ish
+TZ - :x/env-var-name-ish
+V - :x/blacklist
+X - :x/blacklist
+[(a x) (b x) (c x)] - :tuple
+[seconds, nanoseconds] - :x/blacklist
+_ - :symbol
+_tzset() - :x/c-func-name-ish
+a - :symbol
+acc - :symbol
+accumulate - :symbol
+address-family - :symbol
+after - :symbol
+args - :symbol
+argument - :symbol
+argv[0] - :x/blacklist
+arr - :symbol
+array - :symbol
+array/concat - :symbol
+array/new - :symbol
+arrtup - :symbol
+as - :symbol
+asm - :symbol
+assert - :symbol
+at - :symbol
+b - :symbol
+bInheritHandle - :x/blacklist
+bad-compile - :symbol
+bad-parse - :symbol
+before - :symbol
+before? - :symbol
+bindhost - :symbol
+binding - :symbol
+bindings - :symbol
+bindport - :symbol
+bodies - :symbol
+body - :symbol
+buf - :symbol
+buffer/push-byte - :symbol
+buffer/push-string - :symbol
+byte - :symbol
+bytes - :symbol
+c - :symbol
+cancel - :symbol
+capacity - :symbol
+catch - :symbol
+chan - :symbol
+chroot - :symbol
+clauses - :symbol
+clock - :symbol
+cnd - :symbol
+cntype - :symbol
+col - :symbol
+compare - :symbol
+compile - :symbol
+condition - :symbol
+config - :symbol
+contents - :symbol
+core/channel - :symbol
+core/native - :symbol
+count - :symbol
+ctor - :symbol
+ctx - :symbol
+d - :symbol
+debug/stacktrace - :symbol
+def - :symbol
+default-peg-grammar - :symbol
+defdyn - :symbol
+defn - :symbol
+delim - :symbol
+describe - :symbol
+dest - :symbol
+dflt - :symbol
+dict - :symbol
+dicts - :symbol
+dir - :symbol
+disasm - :symbol
+dispatch - :symbol
+doc - :symbol
+doc-format - :symbol
+dofile - :symbol
+dtor - :symbol
+dyn - :symbol
+e - :symbol
+end - :symbol
+endianness - :symbol
+env - :symbol
+eprintf - :symbol
+err - :symbol
+error - :symbol
+ev - :symbol
+ev/cancel - :symbol
+ev/close - :symbol
+ev/do-thread - :symbol
+ev/give - :symbol
+ev/go - :symbol
+ev/go-gather - :symbol
+ev/read - :symbol
+ev/thread - :symbol
+eval - :symbol
+exit - :symbol
+export - :symbol
+expression - :symbol
+ext - :symbol
+f - :symbol
+fal - :symbol
+fals - :symbol
+ffi-native - :symbol
+ffi-type - :symbol
+ffi-types - :symbol
+ffi/call - :symbol
+ffi/defbind - :symbol
+ffi/free - :symbol
+ffi/jitfn - :symbol
+ffi/malloc - :symbol
+ffi/read - :symbol
+ffi/write - :symbol
+fib - :symbol
+fiber/new - :symbol
+file - :symbol
+filewatch/add - :symbol
+flags - :symbol
+flycheck - :symbol
+fmt - :symbol
+fn - :symbol
+fopen() - :x/c-func-name-ish
+for - :symbol
+force - :symbol
+fork - :symbol
+form - :symbol
+forms - :symbol
+g - :symbol
+get - :symbol
+getline - :symbol
+growth - :symbol
+handler - :symbol
+head - :symbol
+host - :symbol
+i - :symbol
+import - :symbol
+in - :symbol
+ind - :symbol
+index - :symbol
+init - :symbol
+int main(int argc, char  **argv); - :x/blacklist
+int/s64 - :symbol
+int/u64 - :symbol
+interrupt? - :symbol
+into - :symbol
+invert - :symbol
+iter - :symbol
+j - :symbol
+janetconf.h - :x/path-ish
+juxt* - :symbol
+keep-syntax - :symbol
+key - :symbol
+ks - :symbol
+ksvs - :symbol
+length - :symbol
+let - :symbol
+lim - :symbol
+limit - :symbol
+line - :symbol
+lints - :symbol
+loader - :symbol
+local - :symbol
+lookup - :symbol
+loop - :symbol
+ls - :symbol
+m - :symbol
+macex - :symbol
+maclintf - :symbol
+main - :symbol
+make-env - :symbol
+make-image - :symbol
+mansec - :symbol
+marshal - :symbol
+math/nan - :symbol
+mode - :symbol
+module/cache - :symbol
+module/expand-path - :symbol
+module/find - :symbol
+module/loaders - :symbol
+module/loading - :symbol
+module/paths - :symbol
+multi - :symbol
+my-custom-macro - :symbol
+n - :symbol
+name - :symbol
+native - :symbol
+net/accept - :symbol
+net/accept-loop - :symbol
+net/address - :symbol
+net/listen - :symbol
+next - :symbol
+nil - :nil
+no-cycles - :symbol
+no-reuse - :symbol
+not= - :symbol
+ns - :symbol
+o - :symbol
+object - :symbol
+on-binding - :symbol
+only - :symbol
+opts - :symbol
+order - :symbol
+os/chmod - :symbol
+os/execute - :symbol
+os/exit - :symbol
+os/perm-int - :symbol
+os/perm-string - :symbol
+os/posix-chroot - :symbol
+os/proc-close - :symbol
+os/proc-kill - :symbol
+os/proc-wait - :symbol
+os/setlocale - :symbol
+os/spawn - :symbol
+os/stat - :symbol
+os/strftime - :symbol
+p - :symbol
+pairs - :symbol
+parser/error - :symbol
+parts - :symbol
+path - :symbol
+patt - :symbol
+peg - :symbol
+pfx - :symbol
+port - :symbol
+postwalk - :symbol
+pp - :symbol
+pred - :symbol
+prefix - :symbol
+prin - :symbol
+prinf - :symbol
+print - :symbol
+printf - :symbol
+private - :symbol
+prmpt - :symbol
+proc - :symbol
+proto - :symbol
+ptr - :symbol
+put - :symbol
+q - :symbol
+r - :symbol
+reduce - :symbol
+require - :symbol
+rest - :symbol
+resume - :symbol
+return - :symbol
+rev-lookup - :symbol
+rng - :symbol
+run-context - :symbol
+s - :symbol
+sec - :symbol
+seed - :symbol
+sep - :symbol
+setdyn - :symbol
+sfx - :symbol
+shifts - :symbol
+sigmask - :symbol
+snprintf() - :x/c-func-name-ish
+source - :symbol
+src - :symbol
+st - :symbol
+start - :symbol
+stat() - :x/c-func-name-ish
+str - :symbol
+strftime() - :x/c-func-name-ish
+string - :symbol
+string/format - :symbol
+struct - :symbol
+subst - :symbol
+suitable next - :multiple-items
+sym - :symbol
+sym-name - :symbol
+syms - :symbol
+t - :symbol
+tab - :symbol
+tab-or-kwd - :symbol
+table/new - :symbol
+tag - :symbol
+target - :symbol
+test - :symbol
+text - :symbol
+thaw - :symbol
+thunk - :symbol
+thunks - :symbol
+time - :symbol
+timeout - :symbol
+to - :symbol
+tocancel - :symbol
+tocheck - :symbol
+tru - :symbol
+true - :boolean
+tup - :symbol
+tzset() - :x/c-func-name-ish
+unmarshal - :symbol
+userdata - :symbol
+v - :symbol
+val - :symbol
+value - :symbol
+varfn - :symbol
+vars - :symbol
+void trampoline(void *ctx, void *userdata) - :x/blacklist
+vs - :symbol
+w - :symbol
+wait - :symbol
+warn-compile - :symbol
+what - :symbol
+whence - :symbol
+where - :symbol
+which - :symbol
+with - :symbol
+wrap - :symbol
+x - :symbol
+xs - :symbol
