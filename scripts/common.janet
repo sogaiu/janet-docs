@@ -59,5 +59,5 @@
 (defn parse-sig
   [sig-str]
   (def p (parse sig-str))
-  (drop 1 (flatten p)))
+  (array/slice (flatten p) 1))
 
