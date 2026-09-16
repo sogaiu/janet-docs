@@ -244,23 +244,23 @@
 (defn classify
   [item]
   (when (path-ish? item)
-    (break :path-ish))
+    (break :x/path-ish))
   #
   (when (c-flag-name-ish? item)
-    (break :c-flag-name-ish))
+    (break :x/c-flag-name-ish))
   #
   (when (env-var-name-ish? item)
-    (break :env-var-name-ish))
+    (break :x/env-var-name-ish))
   #
   (when (c-func-name-ish? item)
-    (break :c-func-name-ish))
+    (break :x/c-func-name-ish))
   #
   (when (blacklist? item)
-    (break :blacklist))
+    (break :x/blacklist))
   #
   (def [ok? vals] (protect (parse-all item)))
   (when (not ok?)
-    (break :parse-fail))
+    (break :x/parse-fail))
   #
   (when (< 1 (length vals))
     (break :multiple-items))
