@@ -16,19 +16,19 @@
                body-lines)
           # XXX: not the same as the original since no newlines
           (string/join " ")))
-    (def m
+    (def hits
       (peg/match ~(some (sequence (to "`")
                                   (sequence "`" (capture (to "`")) "`")))
                  body))
-    (when m
-      (each elt m
+    (when hits
+      (each elt hits
         (if (get seen elt)
           (array/push (get seen elt) name)
           (put seen elt @[name])))))
   #
   (each elt (sort (keys seen))
     (def names (if-let [_names (get seen elt)]
-                 (tabseq [n :in _names] n true)
+                 (tabseq [nm :in _names] nm true)
                  @{}))
     (printf "%s - %j" elt (sort (keys names)))))
 
