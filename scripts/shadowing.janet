@@ -3,17 +3,17 @@
 (defn main
   [_ & _args]
   (def params @{})
-  (each sym (all-bindings root-env)
-    (def p (c/parse-ds (c/get-ds (string sym))))
+  (each name (all-bindings root-env)
+    (def p (c/parse-ds (c/get-ds (string name))))
     # XXX: work-around
-    (when (= sym 'tuple/slice)
+    (when (= name 'tuple/slice)
       (put p :sig "(tuple/slice arrtup &opt start end)"))
     (when-let [sig-str (get p :sig)]
-      (def syms (c/parse-sig sig-str))
-      (each s syms
-        (if (not (get params s))
-          (put params s @[sym])
-          (array/push (get params s) sym))
-        (when (get root-env s)
-          (printf "%s: %s" sym s))))))
+      (def names (c/parse-sig sig-str))
+      (each nm names
+        (if (not (get params nm))
+          (put params nm @[name])
+          (array/push (get params nm) name))
+        (when (get root-env nm)
+          (printf "%s: %s" name nm))))))
 

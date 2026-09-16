@@ -3,8 +3,8 @@
 (defn main
   [_ & _args]
   (def seen @{})
-  (each sym (all-bindings root-env)
-    (def p (c/parse-ds (c/get-ds (string sym))))
+  (each name (all-bindings root-env)
+    (def p (c/parse-ds (c/get-ds (string name))))
     (def body-lines (get p :body))
     #
     (def indent
@@ -23,8 +23,8 @@
     (when m
       (each elt m
         (if (get seen elt)
-          (array/push (get seen elt) sym)
-          (put seen elt @[sym])))))
+          (array/push (get seen elt) name)
+          (put seen elt @[name])))))
   #
   (each elt (sort (keys seen))
     (def names (if-let [_names (get seen elt)]

@@ -2,8 +2,8 @@
 
 (defn main
   [_ & _args]
-  (each sym (all-bindings root-env)
-    (def p (c/parse-ds (c/get-ds (string sym))))
+  (each name (all-bindings root-env)
+    (def p (c/parse-ds (c/get-ds (string name))))
     (def body-lines (get p :body))
     #
     (def indent
@@ -24,5 +24,5 @@
                (tabseq [k :in m] k true)
                @{}))
     #
-    (printf "%s - %j" sym (sort (keys bts)))))
+    (printf "%s - %j" name (sort (keys bts)))))
 
