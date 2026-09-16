@@ -63,6 +63,25 @@
 
 ########################################################################
 
+(defn lines-as-string
+  [lines]
+  (def indent
+    (let [_line (get lines 0)]
+      (- (length _line) (length (string/triml _line)))))
+  # dedent all body lines and stitch together
+  (-> (map |(if (< 0 (length $)) (string/slice $ indent) $)
+           lines)
+      # XXX: not the same as the original since no newlines
+      (string/join " ")))
+
+(defn find-code-spans
+  [text]
+  (peg/match ~(some (sequence (to "`")
+                              (sequence "`" (capture (to "`")) "`")))
+             text))
+
+########################################################################
+
 # XXX: weed out or change docstring:
 #
 #      * things with <sym> like bits?
