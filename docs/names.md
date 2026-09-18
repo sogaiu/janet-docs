@@ -118,8 +118,3 @@ one of the other two.
 * `falsey` - `if-with`
 * `fals` - `compif`
 
-## Shadowing?
-
-Doesn't actually shadow due to order:
-
-* `pairs` - `cond`, `case`
