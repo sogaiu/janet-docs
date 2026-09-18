@@ -106,8 +106,15 @@ $n - :symbol
 :in - :keyword
 :int - :keyword
 :int-permissions - :keyword
+:ip-add-membership - :keyword
+:ip-drop-membership - :keyword
+:ip-multicast-ttl - :keyword
 :ipv4 - :keyword
 :ipv6 - :keyword
+:ipv6-join-group - :keyword
+:ipv6-leave-group - :keyword
+:ipv6-multicast-hops - :keyword
+:ipv6-unicast-hops - :keyword
 :iterate - :keyword
 :keys - :keyword
 :last-access - :keyword
@@ -158,6 +165,9 @@ $n - :symbol
 :seconds - :keyword
 :security - :keyword
 :size - :keyword
+:so-broadcast - :keyword
+:so-keepalive - :keyword
+:so-reuseaddr - :keyword
 :socket - :keyword
 :source - :keyword
 :stream - :keyword
@@ -265,7 +275,7 @@ TZ - :x/env-var-name-ish
 V - :x/blacklist
 X - :x/blacklist
 [(a x) (b x) (c x)] - :tuple
-[seconds, nanoseconds] - :x/blacklist
+[seconds nanoseconds] - :tuple
 _ - :symbol
 _tzset() - :x/c-func-name-ish
 a - :symbol
@@ -295,9 +305,11 @@ bindhost - :symbol
 binding - :symbol
 bindings - :symbol
 bindport - :symbol
+bit-index - :symbol
 bodies - :symbol
 body - :symbol
 buf - :symbol
+buffer/push - :symbol
 buffer/push-byte - :symbol
 buffer/push-string - :symbol
 byte - :symbol
@@ -320,10 +332,10 @@ config - :symbol
 contents - :symbol
 core/channel - :symbol
 core/native - :symbol
-count - :symbol
 ctor - :symbol
 ctx - :symbol
 d - :symbol
+data - :symbol
 debug/stacktrace - :symbol
 def - :symbol
 default-peg-grammar - :symbol
@@ -522,6 +534,7 @@ shifts - :symbol
 sigmask - :symbol
 snprintf() - :x/c-func-name-ish
 source - :symbol
+sprintf() - :x/c-func-name-ish
 src - :symbol
 st - :symbol
 start - :symbol
@@ -532,7 +545,6 @@ string - :symbol
 string/format - :symbol
 struct - :symbol
 subst - :symbol
-suitable next - :multiple-items
 sym - :symbol
 sym-name - :symbol
 syms - :symbol

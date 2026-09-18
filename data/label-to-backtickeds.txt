@@ -74,8 +74,15 @@ keyword
   :in
   :int
   :int-permissions
+  :ip-add-membership
+  :ip-drop-membership
+  :ip-multicast-ttl
   :ipv4
   :ipv6
+  :ipv6-join-group
+  :ipv6-leave-group
+  :ipv6-multicast-hops
+  :ipv6-unicast-hops
   :iterate
   :keys
   :last-access
@@ -137,6 +144,9 @@ keyword
   :security
   :size
   :size
+  :so-broadcast
+  :so-keepalive
+  :so-reuseaddr
   :socket
   :source
   :stream
@@ -177,7 +187,6 @@ multiple-items
   :until expression
   :when condition
   :while expression
-  suitable next
 nil
   nil
   nil
@@ -242,6 +251,8 @@ symbol
   args
   args
   args
+  args
+  args
   argument
   arr
   arr
@@ -287,6 +298,7 @@ symbol
   at
   at
   at
+  at
   b
   b
   b
@@ -303,6 +315,10 @@ symbol
   binding
   bindings
   bindport
+  bit-index
+  bit-index
+  bit-index
+  bit-index
   bodies
   body
   body
@@ -326,6 +342,55 @@ symbol
   buf
   buf
   buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buf
+  buffer/push
   buffer/push-byte
   buffer/push-string
   byte
@@ -389,11 +454,15 @@ symbol
   contents
   core/channel
   core/native
-  count
   ctor
   ctor
   ctx
   d
+  data
+  data
+  data
+  data
+  data
   debug/stacktrace
   def
   def
@@ -561,6 +630,8 @@ symbol
   flags
   flycheck
   flycheck
+  fmt
+  fmt
   fmt
   fn
   for
@@ -797,6 +868,7 @@ symbol
   n
   n
   n
+  n
   name
   name
   native
@@ -805,6 +877,7 @@ symbol
   net/accept-loop
   net/address
   net/listen
+  next
   next
   next
   next
@@ -994,7 +1067,6 @@ symbol
   sec
   seed
   sep
-  sep
   setdyn
   sfx
   shifts
@@ -1101,7 +1173,8 @@ symbol
   userdata
   v
   v
-  v
+  val
+  val
   val
   val
   val
@@ -1324,6 +1397,8 @@ symbol
   xs
   xs
   xs
+  xs
+  xs
 tuple
   ((juxt* a  b c) x)
   (@ <sym>)
@@ -1379,6 +1454,7 @@ tuple
   (upscope ;body)
   (when (not condition) ;body)
   [(a x) (b x) (c x)]
+  [seconds nanoseconds]
 x/blacklist
   :sys:
   A
@@ -1391,7 +1467,6 @@ x/blacklist
   Q
   V
   X
-  [seconds, nanoseconds]
   argv[0]
   bInheritHandle
   int main(int argc, char  **argv);
@@ -1462,6 +1537,8 @@ x/c-func-name-ish
   _tzset()
   fopen()
   snprintf()
+  sprintf()
+  sprintf()
   stat()
   strftime()
   tzset()
