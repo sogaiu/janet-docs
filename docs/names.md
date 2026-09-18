@@ -40,8 +40,6 @@ more consistent.
 * `env` - `with-env`, `eval`, `eval-string`, `make-image`, `debugger-on-status`,
   `dofile`, `all-bindings`, `all-dynamics`, `repl`
 
-* `f` - `sort-by`, `sorted-by`, `ev/call`
-
 * `fib` - `cancel`, `debug/arg-stack`, `debug/stacktrace`,
   `debug/step`, `debugger`, `ev/cancel`, `fiber/can-resume?`,
   `fiber/getenv`, `fiber/last-value`, `fiber/setenv`, `propagate`,
@@ -52,8 +50,6 @@ more consistent.
 * `form` - `defer`, `edefer`, `walk`, `postwalk`, `prewalk`, `eval`
 
 * `forms` - `and`, `or`, `->`, `->>`, `-?>`, `-?>>`, `as->`, `as?->`, `delay`
-
-* `funs` - `juxt*`, `fuxt`
 
 * `head` - `loop`, `seq`, `catseq`, `tabseq`, `generate`
 
@@ -106,6 +102,30 @@ more consistent.
 * `condition` - `if-not`, `when`, `unless`
 * `cnd` - `compif`, `compwhen`
 
+### fal vs vs falsey vs fals
+
+* `fal` - `if-let`
+* `falsey` - `if-with`
+* `fals` - `compif`
+
+### f vs fun vs func
+
+* `f` - `accumulate`, `accumulate2,`, `apply,`, `as-macro`, `ev/call`,
+  `group-by`, `map`, `mapcat`, `partial`, `partition-by`, `postwalk`,
+  `prewalk`, `reduce`, `reduce2`, `sort-by`, `sorted-by`, `update`,
+  `update-in`, `walk`
+* `fun` - `debug/fbreak`, `debug/unfbreak`
+* `func` - `disasm`, `fiber/new`, `trace`, `untrace`
+
+Note 1:
+
+* `functions` - `comp`
+* `funs` - `juxt*`, `fuxt`
+
+Note 2:
+
+* `fiber-or-fun` - `ev/go` - might want `ev/thread`'s `main` to match this
+
 ### val vs value
 
 * `val` - `array/fill`, `array/new-filled`, `default`, `ev/give`,
@@ -115,12 +135,6 @@ more consistent.
   `toggle`, `quit`
 
 Leaning toward more use of `val`.
-
-### fal vs vs falsey vs fals
-
-* `fal` - `if-let`
-* `falsey` - `if-with`
-* `fals` - `compif`
 
 ## Possibilities
 
