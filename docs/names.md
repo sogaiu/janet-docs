@@ -121,7 +121,16 @@ Leaning toward more use of `val`.
 
 ## Possibilities
 
+* `val` might be better than `x` (see point about "hard-wired" below)
+
 * `num` for numbers...though do we want something that covers
   just Janet numbers and another thing that covers both
   Janet numbers and core/s64, core/u64 things?
+
+  * `a`, `b`, `e`, `m`, `x` used in `math/` functions
+
+  * `x` is hard-wired for some via `JANET_DEFINE_NAMED_MATHOP`
+    (and indirectly via `JANET_DEFINE_MATHOP`)
+
+* `args` vs `vals` vs `xs`
 
