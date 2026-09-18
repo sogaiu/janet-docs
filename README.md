@@ -8,5 +8,6 @@ Some notes and scratch work on Janet documentation:
 * [Parameter Names in `boot.janet`](./docs/names.md)
 * [Unofficial FAQ List](./docs/faq.md)
 * [Ideas for More Janet Website Content](./docs/moar.md)
+* [Tips](./docs/tips.md)
 * [Credits](./docs/credits.md)
 
