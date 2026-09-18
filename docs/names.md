@@ -118,3 +118,9 @@ one of the other two.
 * `falsey` - `if-with`
 * `fals` - `compif`
 
+## Possibilities
+
+* `num` for numbers...though do we want something that covers
+  just Janet numbers and another thing that covers both
+  Janet numbers and core/s64, core/u64 things?
+
