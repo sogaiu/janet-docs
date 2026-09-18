@@ -42,7 +42,10 @@ more consistent.
 
 * `f` - `sort-by`, `sorted-by`, `ev/call`
 
-* `fib` -
+* `fib` - `cancel`, `debug/arg-stack`, `debug/stacktrace`,
+  `debug/step`, `debugger`, `ev/cancel`, `fiber/can-resume?`,
+  `fiber/getenv`, `fiber/last-value`, `fiber/setenv`, `propagate`,
+  `resume`
 
 * `fmt` - `maclintf`, `errorf`, `assertf`
 
