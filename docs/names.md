@@ -105,12 +105,13 @@ more consistent.
 
 ### val vs value
 
-* `val` - `default`, `setdyn`
-* `value` - `toggle`, `defglobal`, `return`, `has-value?`, `quit`
+* `val` - `array/fill`, `array/new-filled`, `default`, `ev/give`,
+  `index-of`, `int/to-bytes`, `interpose`, `put`, `put-in`, `setdyn`
 
-I didn't realize that `val` and `value` had been used and introduced
-`v` for `put-in`.  This should probably be eliminated in favor of
-one of the other two.
+* `value` - `defglobal`, `dev/thread`, `return`, `has-value?`,
+  `toggle`, `quit`
+
+Leaning toward more use of `val`.
 
 ### fal vs vs falsey vs fals
 
