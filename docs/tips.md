@@ -57,5 +57,5 @@ change.
 
   Note that apart from docstrings, for documentation matters, it's
   likely an appropriate repository to make issues at is the
-  janet-lang.org repository (though not for spork).
+  janet-lang.org repository (though not necessarily for spork?).
 
