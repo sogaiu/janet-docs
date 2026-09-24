@@ -1,14 +1,7 @@
 ```
 JANET_CORE_FN(cfun_array_slice,
               "(array/slice arrtup &opt start end)",
-              "Takes a slice of an array or tuple from `start` to "
-              "`end`. The range is half open, [start, end). "
-              "Indices can also be negative, indicating indexing "
-              "from the end of the array. By default, `start` is "
-              "0 and `end` is the length of the array. Note that "
-              "if the range is negative, it is taken as (start, "
-              "end] to allow a full negative slice range. "
-              "Returns a new array.") {
+              "Same as `tuple/slice`, but returns an array.") {
 ```
 
 ```
