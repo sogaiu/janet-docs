@@ -1,0 +1,257 @@
+&: %, %=, *, *=, +, +=, -, -=, ->, ->>, -?>, -?>>, /, /=, <, <=, =, >, >=, all, and, apply, array, array/concat, array/insert, array/join, array/push, as->, as-macro, as?->, assertf, band, blshift, bor, brshift, brushift, buffer, buffer/format, buffer/format-at, buffer/from-bytes, buffer/push, buffer/push-at, buffer/push-byte, buffer/push-string, buffer/push-word, bxor, case, catseq, comment, comp, compare<, compare<=, compare=, compare>, compare>=, compwhen, cond, coro, count, def-, defdyn, defer, defmacro, defmacro-, defn, defn-, delay, div, each, eachk, eachp, edefer, eprin, eprinf, eprint, eprintf, errorf, ev/call, ev/do-thread, ev/gather, ev/give-supervisor, ev/rselect, ev/select, ev/spawn, ev/spawn-thread, ev/with-deadline, ev/with-lock, ev/with-rlock, ev/with-wlock, ffi/call, ffi/defbind, ffi/defbind-alias, ffi/signature, ffi/struct, fiber-fn, file/write, filewatch/add, filewatch/new, for, forever, forv, generate, import, import*, interleave, juxt, juxt*, keep, keyword, label, let, loop, maclintf, map, mapcat, match, max, merge, merge-into, min, mod, not=, or, partial, peg/find, peg/find-all, peg/match, peg/replace, peg/replace-all, prin, prinf, print, printf, prompt, protect, range, repeat, require, sandbox, seq, some, string, string/format, string/from-bytes, struct, struct/with-proto, symbol, table, tabseq, tuple, tuple/brackets, tuple/join, unless, update, update-in, use, var-, varfn, when, when-let, when-with, with, with-dyns, with-env, with-syms, with-vars, xprin, xprinf, xprint, xprintf
+&keys: bundle/install, bundle/reinstall, bundle/replace, bundle/update-all, flycheck
+&named: dofile, ffi/context
+&opt: all-bindings, all-dynamics, array/fill, array/new-filled, array/remove, array/slice, assert, bad-compile, buffer/blit, buffer/fill, buffer/new-filled, buffer/slice, bundle/add, bundle/add-bin, bundle/add-directory, bundle/add-file, bundle/add-manpage, compif, compile, curenv, debug, debug/fbreak, debug/stacktrace, debug/step, debug/unfbreak, debugger, debugger-on-status, disasm, doc, doc*, doc-format, dyn, ev/chan, ev/chunk, ev/deadline, ev/go, ev/read, ev/thread, ev/thread-chan, ev/write, eval, eval-string, ffi/context, ffi/native, ffi/pointer-buffer, ffi/pointer-cfunction, ffi/read, ffi/write, fiber/new, file/open, file/read, file/seek, find, find-index, get, get-in, getline, if-let, if-not, if-with, in, index-of, int/to-bytes, keyword/slice, macex, macex1, make-env, marshal, math/rng, math/rng-buffer, math/rng-int, memcmp, merge-module, module/find, module/value, native, net/accept, net/address, net/chunk, net/connect, net/listen, net/read, net/recv-from, net/send-to, net/server, net/shutdown, net/socket, net/write, next, os/clock, os/cpu-count, os/cryptorand, os/date, os/dir, os/execute, os/exit, os/getenv, os/isatty, os/link, os/lstat, os/mktime, os/open, os/pipe, os/posix-exec, os/proc-kill, os/setlocale, os/sigaction, os/spawn, os/stat, os/strftime, os/touch, os/which, parser/consume, parser/produce, parser/state, parser/where, peg/find, peg/find-all, peg/match, peg/replace, peg/replace-all, quit, repl, resume, return, scan-number, short-fn, slice, sort, sorted, spit, string/find, string/find-all, string/join, string/slice, string/split, string/trim, string/triml, string/trimr, struct/to-table, symbol/slice, table/to-struct, tuple/slice, unmarshal, warn-compile, yield
+a: math/hypot, math/pow, memcmp
+actime: os/touch
+address: net/address-unpack
+address-family: net/socket
+after: keep-syntax, keep-syntax!
+alias: defdyn, ffi/defbind-alias
+arg: short-fn
+arg-types: ffi/signature
+args: apply, as-macro, assertf, buffer/format, buffer/format-at, cli-main, errorf, ev/call, extreme, ffi/call, import, import*, maclintf, max, max-of, min, min-of, os/execute, os/posix-exec, os/spawn, peg/find, peg/find-all, peg/match, peg/replace, peg/replace-all, range, require, string/format, update, update-in
+arr: array/clear, array/concat, array/ensure, array/fill, array/insert, array/join, array/peek, array/pop, array/push, array/remove, array/trim, os/dir
+arrtup: array/slice, tuple/slice
+as: as->, as?->, os/clock
+assembly: asm
+ast: compile
+at: array/insert, array/remove, buffer/format-at
+b: math/hypot, memcmp, parser/byte
+base: scan-number
+before: keep-syntax, keep-syntax!
+before?: sort, sorted
+bindhost: net/connect
+binding: each, eachk, eachp, if-with, when-with, with
+bindings: if-let, let, when-let, with-dyns
+bindport: net/connect
+bit-index: buffer/bit, buffer/bit-clear, buffer/bit-set, buffer/bit-toggle
+bodies: ev/gather
+body: catseq, compwhen, coro, defer, each, eachk, eachp, edefer, ev/do-thread, ev/spawn, ev/spawn-thread, ev/with-deadline, ev/with-lock, ev/with-rlock, ev/with-wlock, ffi/defbind, ffi/defbind-alias, fiber-fn, for, forever, forv, generate, label, let, loop, prompt, protect, repeat, seq, try, unless, varfn, when, when-let, when-with, with, with-dyns, with-env, with-syms, with-vars
+buf: buffer/bit, buffer/bit-clear, buffer/bit-set, buffer/bit-toggle, buffer/clear, buffer/fill, buffer/format, buffer/format-at, buffer/popn, buffer/push, buffer/push-at, buffer/push-byte, buffer/push-float32, buffer/push-float64, buffer/push-string, buffer/push-uint16, buffer/push-uint32, buffer/push-uint64, buffer/push-word, buffer/trim, ev/chunk, ev/read, ffi/write, file/read, getline, int/to-bytes, marshal, math/rng-buffer, net/chunk, net/read, net/recv-from, os/cryptorand, unmarshal
+buffer-size: file/open
+bundle-name: bundle/installed?, bundle/manifest, bundle/reinstall, bundle/replace, bundle/uninstall
+byte: buffer/fill, buffer/new-filled
+byte-vals: buffer/from-bytes, string/from-bytes
+bytes: buffer/slice, ffi/jitfn, ffi/read, file/write, keyword/slice, os/perm-int, parser/consume, string/check-set, string/repeat, string/slice, string/trim, string/triml, string/trimr, symbol/slice
+c: chr
+calling-convention: ffi/signature
+capacity: array/ensure, array/new, array/weak, buffer/new, ev/chan, ffi/pointer-buffer, table/new, table/weak, table/weak-keys, table/weak-values
+cases: match
+catch: try
+category: os/setlocale
+cc: ffi/trampoline
+chan: ev/capacity, ev/chan-close, ev/count, ev/full, ev/give, ev/take, filewatch/new
+chmod-mode: bundle/add, bundle/add-bin, bundle/add-directory, bundle/add-file
+chunks: repl
+clauses: case, cond, ev/rselect, ev/select
+clock: os/clock
+cnd: compif, compwhen
+cntype: net/address, net/connect, net/listen, net/server, net/socket
+col: bad-compile, debug/break, debug/unbreak, parser/where, tuple/setmap, warn-compile
+colorize: doc-format
+condition: if-not, unless, when
+config: bundle/install
+configs: bundle/update-all
+contents: spit
+ctor: if-with, when-with, with
+data: buffer/push-float32, buffer/push-float64, buffer/push-uint16, buffer/push-uint32, buffer/push-uint64, ev/write, ffi/write, net/send-to, net/write
+date-struct: os/mktime
+default-flags: filewatch/new
+delim: string/split
+dest: buffer/blit, bundle/add, bundle/add-directory, bundle/add-file, net/send-to
+dest-start: buffer/blit
+dflt: dyn, find, find-index, get, get-in, in, index-of, os/cpu-count, os/getenv
+dict: getproto, kvs
+dicts: merge, merge-into
+dir: os/dir, os/posix-chroot
+dispatch: case
+ds: thaw, thaw-keep-keys
+dtor: if-with, when-with, with
+e: error, math/ldexp
+else: if-not
+end: array/slice, buffer/slice, keyword/slice, slice, string/slice, symbol/slice, tuple/slice
+endianness: int/to-bytes
+env: all-bindings, all-dynamics, compile, debugger-on-status, dofile, env-lookup, eval, eval-string, fiber/new, getline, make-image, native, os/execute, os/posix-exec, os/spawn, repl, with-env
+err: assert, cancel, debug/stacktrace, ev/cancel
+evaluator: dofile
+exit: dofile
+expander: dofile
+export: merge-module
+ext: module/add-file-extension, module/add-paths
+f: accumulate, accumulate2, apply, as-macro, complement, ev/call, file/close, file/flush, file/read, file/seek, file/tell, file/write, group-by, map, mapcat, partial, partition-by, postwalk, prewalk, reduce, reduce2, sort-by, sorted-by, update, update-in, walk
+fal: if-let
+fals: compif
+falsey: if-with
+ffi-native: ffi/close, ffi/lookup
+ffi-type: ffi/align, ffi/read, ffi/size, ffi/write
+ffi-types: ffi/struct
+fib: cancel, debug/arg-stack, debug/lineage, debug/stack, debug/stacktrace, debug/step, debugger, ev/cancel, fiber/can-resume?, fiber/getenv, fiber/last-value, fiber/maxstack, fiber/setenv, fiber/setmaxstack, fiber/status, propagate, resume
+fiber-or-fun: ev/go
+field: disasm
+file: file/lines, os/isatty
+filename: bundle/add-bin
+find-all: module/find
+flags: ev/thread, fiber-fn, filewatch/add, os/execute, os/open, os/pipe, os/posix-exec, os/spawn
+fmt: assertf, buffer/format, buffer/format-at, eprinf, eprintf, errorf, maclintf, os/strftime, prinf, printf, string/format, xprinf, xprintf
+forbidden-capabilities: sandbox
+force: os/exit
+form: defer, edefer, eval, postwalk, prewalk, walk
+forms: ->, ->>, -?>, -?>>, and, as->, as?->, delay, or
+fun: debug/fbreak, debug/unfbreak
+func: disasm, fiber/new, trace, untrace
+functions: comp
+funs: juxt, juxt*
+growth: array/ensure
+handler: net/accept-loop, net/server, os/sigaction
+head: catseq, generate, loop, seq, tabseq
+host: net/address, net/connect, net/listen, net/server
+i: for, forv
+image: load-image
+ind: drop, drop-until, drop-while, flatten, flatten-into, sorted, sorted-by, take, take-until, take-while
+indent: doc-format
+index: buffer/push-at, ffi/write, parser/consume
+init: accumulate, reduce, varglobal
+int: os/perm-string
+interrupt-interpreter: os/sigaction
+interval: gcsetinterval
+into: flatten-into
+intr?: ev/deadline
+is-repl: debugger-on-status
+iter: empty?
+key: dyn, get, has-key?, in, next, parser/state, put, setdyn, struct/rawget, table/rawget, update
+key-body: tabseq
+ks: get-in, put-in, update-in, zipcoll
+ksvs: struct, struct/with-proto, table
+kwargs: flycheck
+lazy: ffi/context
+len: memcmp
+level: debugger, debugger-on-status, maclintf, warn-compile
+lim: math/rng-int
+limit: ev/thread-chan, string/split
+line: bad-compile, debug/break, debug/unbreak, ffi/pointer-cfunction, parser/where, tuple/setmap, warn-compile
+lints: compile
+loader: module/add-file-extension, module/add-paths
+local: all-bindings, all-dynamics, os/date, os/mktime, os/strftime
+locale: os/setlocale
+lock: ev/acquire-lock, ev/release-lock, ev/with-lock, ev/with-rlock, ev/with-wlock
+lookup: unmarshal
+m: math/ldexp
+macrof: bad-compile
+main: ev/thread
+manifest: bundle/add, bundle/add-bin, bundle/add-directory, bundle/add-file, bundle/add-manpage
+mansec: bundle/add-manpage
+map-symbols: ffi/context
+mask: os/umask
+maxstack: fiber/setmaxstack
+mode: file/open, net/shutdown, os/chmod, os/open, spit
+modtime: os/touch
+module: module/value
+modules: use
+more: def-, defdyn, defmacro, defmacro-, defn, defn-, partial, var-
+more-flags: filewatch/add
+msg: bad-compile, warn-compile
+multi: net/address
+n: array/new-filled, array/remove, blshift, bnot, brshift, brushift, buffer/new-filled, buffer/popn, curenv, drop, ev/chunk, ev/read, ffi/pointer-buffer, file/seek, math/rng-buffer, os/cryptorand, partition, repeat, string/repeat, take
+name: def-, defglobal, defmacro, defmacro-, defn, defn-, ffi/defbind, ffi/defbind-alias, ffi/pointer-cfunction, label, short-fn, var-, varfn, varglobal
+native-path: ffi/context
+nbytes: net/chunk, net/read, net/recv-from
+new-config: bundle/reinstall, bundle/replace
+newname: os/rename
+newpath: os/link, os/symlink
+no-cycles: marshal
+no-reuse: net/listen, net/server
+ns: %=, *=, +=, -=, /=, band, bor, bxor
+offset: ffi/pointer-buffer, ffi/read
+offset-a: memcmp
+offset-b: memcmp
+oldname: os/rename
+oldpath: os/link, os/symlink
+on-binding: macex, macex1
+only: merge-module
+onsignal: repl
+option: net/setsockopt
+opts: run-context
+order: buffer/push-float32, buffer/push-float64, buffer/push-uint16, buffer/push-uint32, buffer/push-uint64, extreme
+p: bad-parse, parser/clone
+parent: make-env
+parser: dofile, parser/byte, parser/consume, parser/eof, parser/error, parser/flush, parser/has-more, parser/insert, parser/produce, parser/state, parser/status, parser/where, repl
+parts: array/concat, array/join, string/join, tuple/join
+path: bundle/install, bundle/replace, bundle/whois, dofile, ffi/native, file/open, filewatch/add, filewatch/remove, flycheck, import, import*, module/add-syspath, module/expand-path, module/find, native, os/cd, os/chmod, os/lstat, os/mkdir, os/open, os/readlink, os/realpath, os/rm, os/rmdir, os/stat, os/touch, require, slurp, spit
+patt: string/find, string/find-all, string/replace, string/replace-all
+payload: ev/give-supervisor
+pc: debug/fbreak, debug/unfbreak
+peg: peg/compile, peg/find, peg/find-all, peg/match, peg/replace, peg/replace-all
+pfx: string/has-prefix?
+port: net/address, net/connect, net/listen, net/server
+pred: all, count, drop-until, drop-while, filter, find, find-index, keep, some, take-until, take-while
+prefix: debug/stacktrace, merge-module
+private: module/value
+prmpt: getline
+proc: os/proc-close, os/proc-kill, os/proc-wait
+proto: struct/with-proto, table/setproto, table/to-struct
+ps: from-pairs
+ptr: ffi/call, ffi/free, ffi/pointer-buffer, ffi/pointer-cfunction
+read: dofile, repl
+recursive: struct/to-table
+ret-type: ffi/defbind, ffi/defbind-alias, ffi/signature
+rev-lookup: marshal
+rng: math/rng-buffer, math/rng-int, math/rng-uniform
+rwlock: ev/acquire-rlock, ev/acquire-wlock, ev/release-rlock, ev/release-wlock
+sec: ev/deadline, ev/sleep, ev/with-deadline, os/sleep
+seed: math/rng, math/seedrandom
+sep: string/join
+sfx: string/has-suffix?
+shifts: blshift, brshift, brushift
+sigmask: fiber/new
+signature: ffi/call
+size: ffi/malloc
+source: compile, debug/break, debug/unbreak, dofile, ffi/pointer-cfunction, merge-module
+src: buffer/blit, bundle/add, bundle/add-bin, bundle/add-file, bundle/add-manpage
+src-end: buffer/blit
+src-start: buffer/blit
+st: struct/getproto, struct/proto-flatten, struct/rawget, struct/to-table
+start: array/slice, buffer/slice, for, forv, keyword/slice, peg/find, peg/find-all, peg/match, peg/replace, peg/replace-all, slice, string/find, string/find-all, string/slice, string/split, symbol/slice, tuple/slice
+stop: for, forv
+str: doc-format, eval-string, os/shell, parse, parse-all, scan-number, string/ascii-lower, string/ascii-upper, string/bytes, string/check-set, string/find, string/find-all, string/has-prefix?, string/has-suffix?, string/replace, string/replace-all, string/reverse, string/split, string/trim, string/triml, string/trimr
+stream: ev/chunk, ev/close, ev/read, ev/write, net/accept, net/accept-loop, net/chunk, net/close, net/flush, net/localname, net/peername, net/read, net/recv-from, net/send-to, net/setsockopt, net/shutdown, net/write
+subst: peg/replace, peg/replace-all, string/replace, string/replace-all
+supervisor: ev/go, ev/thread
+sym: default, doc*, module/value
+sym-name: ffi/lookup
+symlink: os/link
+syms: with-syms
+tab: fiber/setenv, merge-into, table/clear, table/clone, table/getproto, table/proto-flatten, table/rawget, table/setproto, table/to-struct
+tab-or-kwd: os/lstat, os/stat
+tag: ev/give-supervisor, prompt
+target: merge-module
+template: module/expand-path
+test: os/which
+text: peg/find, peg/find-all, peg/match, peg/replace, peg/replace-all
+then: if-not
+thunks: ev/go-gather
+time: os/date, os/strftime
+timeout: ev/chunk, ev/read, ev/write, net/accept, net/chunk, net/read, net/recv-from, net/send-to, net/write
+to: return, xprin, xprinf, xprint, xprintf
+tocancel: ev/deadline
+tocheck: ev/deadline
+tru: compif, if-let
+truthy: if-with
+tup: tuple/setmap, tuple/sourcemap, tuple/type
+val: array/fill, array/new-filled, default, ev/give, index-of, int/to-bytes, interpose, net/setsockopt, put, put-in, setdyn
+value: defglobal, ev/go, ev/thread, has-value?, hash, int/s64, int/to-number, int/u64, os/setenv, parser/insert, quit, return, toggle
+value-body: tabseq
+variable: os/getenv, os/setenv
+vars: with-vars
+vs: zipcoll
+wait: os/proc-kill
+watcher: filewatch/add, filewatch/listen, filewatch/remove, filewatch/unlisten
+what: doc, file/read, signal
+whence: file/seek
+where: bad-compile, bad-parse, warn-compile
+which: os/proc-kill, os/sigaction
+width: doc-format
+wrap: parser/produce
+x: %=, *=, ++, +=, --, -=, ->, ->>, -?>, -?>>, /=, abstract?, accumulate, accumulate2, all, any?, array?, as->, as?->, assert, assertf, boolean?, buffer?, bytes?, cfunction?, cmp, compare, comptime, count, debug, debug/step, dec, deep-not=, deep=, describe, dictionary?, doc-of, each, eachk, eachp, even?, every?, false?, fiber?, filter, find, find-index, first, freeze, frequencies, function?, geomean, get, get-in, group-by, has-key?, has-value?, idempotent?, identity, in, inc, index-of, indexed?, int?, interpose, invert, keep, keys, keyword?, last, length, lengthable?, macex, macex1, map, mapcat, marshal, match, math/abs, math/acos, math/acosh, math/asin, math/asinh, math/atan, math/atan2, math/atanh, math/cbrt, math/ceil, math/cos, math/cosh, math/erf, math/erfc, math/exp, math/exp2, math/expm1, math/floor, math/frexp, math/gamma, math/gcd, math/lcm, math/log, math/log-gamma, math/log10, math/log1p, math/log2, math/next, math/pow, math/round, math/sin, math/sinh, math/sqrt, math/tan, math/tanh, math/trunc, mean, nan?, nat?, neg?, next, nil?, not, number?, odd?, one?, os/exit, pairs, partition, partition-by, pos?, pp, product, propagate, put, put-in, reduce, reduce2, resume, reverse, reverse!, signal, slice, some, sort, sort-by, string?, struct?, sum, symbol?, table?, tracev, true?, truthy?, tuple?, type, update, update-in, values, yield, zero?
+xs: %, *, +, -, /, <, <=, =, >, >=, all, array, array/insert, array/push, buffer, buffer/push, buffer/push-at, buffer/push-byte, buffer/push-string, buffer/push-word, compare<, compare<=, compare=, compare>, compare>=, count, distinct, div, eprin, eprinf, eprint, eprintf, interleave, keep, keyword, map, mapcat, mod, not=, prin, prinf, print, printf, some, string, symbol, tuple, tuple/brackets, xprin, xprinf, xprint, xprintf
+y: cmp, compare, deep-not=, deep=, math/atan2, math/gcd, math/lcm, math/next
