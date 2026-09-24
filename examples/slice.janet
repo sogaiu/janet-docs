@@ -3,7 +3,7 @@ JANET_CORE_FN(janet_core_slice,
               "(slice x &opt start end)",
               "Extract a sub-range of `x`. Sub-ranges may be "
               "specified via suitable choices of optional "
-              "arguments `start` and `end`.\n"
+              "arguments `start` and `end` as in `string/slice`.\n"
               "\n"
               "If `x` is a bytes or abstract type with a suitable "
               "`bytes` method, returns a string.\n"
@@ -26,11 +26,11 @@ JANET_CORE_FN(janet_core_slice,
 
 (comment
 
-  (slice "abcdefg" 0 2)
+  (slice "abc" 0 2)
   # =>
   "ab"
 
-  (slice @"abcdefg" 0 2)
+  (slice @"abc" 0 2)
   # =>
   "ab"
 
