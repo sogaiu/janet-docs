@@ -3,7 +3,6 @@
 (defn main
   [_ & _args]
   (var tot 0)
-  (def params @{})
   (each name (all-bindings root-env)
     (def p (c/parse-ds (c/get-ds (string name))))
     # XXX: work-around
