@@ -31,6 +31,13 @@ more consistent.
   `buffer/push-uint64`, `buffer/push-word`, `buffer/trim`, `ev/chunk`,
   `ev/read`, `ffi/write`, `int/to-bytes`, `marshal`, `unmarshal`
 
+* `byte-vals` - `buffer/from-bytes`, `string/from-bytes`
+
+* `bytes` - `buffer/slice`, `ffi/jitfn`, `ffi/read`, `file/write`,
+  `keyword/slice`, `parser/consume`, `string/check-set`,
+  `string/repeat`, `string/slice`, `string/trim`, `string/triml`,
+  `string/trimr`, `symbol/slice`
+
 * `dflt` - `dyn`
 
 * `dict` - `kvs`
