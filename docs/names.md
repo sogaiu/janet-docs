@@ -4,6 +4,10 @@ There is some degree of reuse among parameter names in `boot.janet`
 and in the `.c` files.  After reviewing, possibly usages might be made
 more consistent.
 
+Note, there are some benefits to having parameter names that don't
+shadow the names of built-in constructs.  See a later section for some
+details.
+
 ## Potential for Convention
 
 * `args` - `as-macro`, `maclintf`, `errorf`, `assertf`, `extreme`, `max`, `min`,
@@ -157,4 +161,24 @@ Leaning toward more use of `val`.
     (and indirectly via `JANET_DEFINE_MATHOP`)
 
 * `args` vs `vals` vs `xs`
+
+## Why Parameters Names Not Shadowing Built-in Names is Good
+
+* Shadowing restricts / hampers what can be used within Janet code.
+  For example, if a parameter name `pairs` is used for a function,
+  then within the body of the function, `pairs` cannot be used as the
+  name of the built-in function of the same name.  Even if an
+  implementation at one point in time does not need to call some
+  built-in function or macro, this might change later.  If a built-in
+  name is used for a parameter, we may not notice later and become
+  confused when things don't work as expected if we want to use the
+  built-in construct of the same name.
+
+* Searching experience might be improved because of fewer false
+  positives.  One place that might benefit in particular is the core
+  API page.
+
+* Cross-referencing and analysis may be facilitated.  Shadowing can
+  mean some usages may be harder (if not impossible) to identify
+  unambiguously.
 
