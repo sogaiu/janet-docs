@@ -80,6 +80,14 @@
                               (sequence "`" (capture (to "`")) "`")))
              text))
 
+(comment
+
+  (find-code-spans "hey `you`, this is the `target`, how are `you`?")
+  # =>
+  @["you" "target" "you"]
+
+  )
+
 ########################################################################
 
 # XXX: weed out or change docstring:
